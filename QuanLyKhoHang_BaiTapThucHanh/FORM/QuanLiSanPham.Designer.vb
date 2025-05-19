@@ -1,0 +1,407 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class QuanLiSanPham
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()>
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()>
+    Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btn_LamMoi = New System.Windows.Forms.Button()
+        Me.btn_ThongKe = New System.Windows.Forms.Button()
+        Me.btn_Sua = New System.Windows.Forms.Button()
+        Me.btn_Xoa = New System.Windows.Forms.Button()
+        Me.btn_Them = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.txt_TenSanPham = New System.Windows.Forms.TextBox()
+        Me.txt_MaSoSanPham = New System.Windows.Forms.TextBox()
+        Me.txt_SoLuong = New System.Windows.Forms.TextBox()
+        Me.txt_DonVi = New System.Windows.Forms.TextBox()
+        Me.txt_MoTa = New System.Windows.Forms.TextBox()
+        Me.txt_MaSanPham = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.MaSanPhamDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MaSoSanPhamDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TenSanPhamDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.MoTaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DonViDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.SoLuongTonDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.SanPhamBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.QuanLyKhoHangDataSet1BindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.QuanLyKhoHangDataSet1 = New QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.QuanLyKhoHangDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.SanPhamTableAdapter = New QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1TableAdapters.SanPhamTableAdapter()
+        Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SanPhamBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.QuanLyKhoHangDataSet1BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.QuanLyKhoHangDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.QuanLyKhoHangDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.CadetBlue
+        Me.Panel1.Controls.Add(Me.btn_LamMoi)
+        Me.Panel1.Controls.Add(Me.btn_ThongKe)
+        Me.Panel1.Controls.Add(Me.btn_Sua)
+        Me.Panel1.Controls.Add(Me.btn_Xoa)
+        Me.Panel1.Controls.Add(Me.btn_Them)
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Location = New System.Drawing.Point(1, -1)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(221, 630)
+        Me.Panel1.TabIndex = 0
+        '
+        'btn_LamMoi
+        '
+        Me.btn_LamMoi.Location = New System.Drawing.Point(31, 500)
+        Me.btn_LamMoi.Name = "btn_LamMoi"
+        Me.btn_LamMoi.Size = New System.Drawing.Size(156, 45)
+        Me.btn_LamMoi.TabIndex = 2
+        Me.btn_LamMoi.Text = "Làm Mới"
+        Me.btn_LamMoi.UseVisualStyleBackColor = True
+        '
+        'btn_ThongKe
+        '
+        Me.btn_ThongKe.Location = New System.Drawing.Point(31, 410)
+        Me.btn_ThongKe.Name = "btn_ThongKe"
+        Me.btn_ThongKe.Size = New System.Drawing.Size(156, 45)
+        Me.btn_ThongKe.TabIndex = 1
+        Me.btn_ThongKe.Text = "Thống Kê Tồn Kho"
+        Me.btn_ThongKe.UseVisualStyleBackColor = True
+        '
+        'btn_Sua
+        '
+        Me.btn_Sua.Location = New System.Drawing.Point(31, 307)
+        Me.btn_Sua.Name = "btn_Sua"
+        Me.btn_Sua.Size = New System.Drawing.Size(156, 45)
+        Me.btn_Sua.TabIndex = 1
+        Me.btn_Sua.Text = "Sửa"
+        Me.btn_Sua.UseVisualStyleBackColor = True
+        '
+        'btn_Xoa
+        '
+        Me.btn_Xoa.Location = New System.Drawing.Point(31, 211)
+        Me.btn_Xoa.Name = "btn_Xoa"
+        Me.btn_Xoa.Size = New System.Drawing.Size(156, 45)
+        Me.btn_Xoa.TabIndex = 1
+        Me.btn_Xoa.Text = "Xoá"
+        Me.btn_Xoa.UseVisualStyleBackColor = True
+        '
+        'btn_Them
+        '
+        Me.btn_Them.Location = New System.Drawing.Point(31, 124)
+        Me.btn_Them.Name = "btn_Them"
+        Me.btn_Them.Size = New System.Drawing.Size(156, 45)
+        Me.btn_Them.TabIndex = 1
+        Me.btn_Them.Text = "Thêm"
+        Me.btn_Them.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(34, 48)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(142, 46)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "MENU"
+        '
+        'Panel2
+        '
+        Me.Panel2.Controls.Add(Me.txt_TenSanPham)
+        Me.Panel2.Controls.Add(Me.txt_MaSoSanPham)
+        Me.Panel2.Controls.Add(Me.txt_SoLuong)
+        Me.Panel2.Controls.Add(Me.txt_DonVi)
+        Me.Panel2.Controls.Add(Me.txt_MoTa)
+        Me.Panel2.Controls.Add(Me.txt_MaSanPham)
+        Me.Panel2.Controls.Add(Me.Label5)
+        Me.Panel2.Controls.Add(Me.Label8)
+        Me.Panel2.Controls.Add(Me.Label4)
+        Me.Panel2.Controls.Add(Me.Label7)
+        Me.Panel2.Controls.Add(Me.Label6)
+        Me.Panel2.Controls.Add(Me.Label3)
+        Me.Panel2.Location = New System.Drawing.Point(245, 100)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(838, 187)
+        Me.Panel2.TabIndex = 1
+        '
+        'txt_TenSanPham
+        '
+        Me.txt_TenSanPham.Location = New System.Drawing.Point(221, 132)
+        Me.txt_TenSanPham.Name = "txt_TenSanPham"
+        Me.txt_TenSanPham.Size = New System.Drawing.Size(153, 26)
+        Me.txt_TenSanPham.TabIndex = 3
+        '
+        'txt_MaSoSanPham
+        '
+        Me.txt_MaSoSanPham.Location = New System.Drawing.Point(221, 75)
+        Me.txt_MaSoSanPham.Name = "txt_MaSoSanPham"
+        Me.txt_MaSoSanPham.Size = New System.Drawing.Size(153, 26)
+        Me.txt_MaSoSanPham.TabIndex = 3
+        '
+        'txt_SoLuong
+        '
+        Me.txt_SoLuong.Location = New System.Drawing.Point(580, 135)
+        Me.txt_SoLuong.Name = "txt_SoLuong"
+        Me.txt_SoLuong.Size = New System.Drawing.Size(153, 26)
+        Me.txt_SoLuong.TabIndex = 3
+        '
+        'txt_DonVi
+        '
+        Me.txt_DonVi.Location = New System.Drawing.Point(580, 81)
+        Me.txt_DonVi.Name = "txt_DonVi"
+        Me.txt_DonVi.Size = New System.Drawing.Size(153, 26)
+        Me.txt_DonVi.TabIndex = 3
+        '
+        'txt_MoTa
+        '
+        Me.txt_MoTa.Location = New System.Drawing.Point(580, 20)
+        Me.txt_MoTa.Name = "txt_MoTa"
+        Me.txt_MoTa.Size = New System.Drawing.Size(153, 26)
+        Me.txt_MoTa.TabIndex = 3
+        '
+        'txt_MaSanPham
+        '
+        Me.txt_MaSanPham.Location = New System.Drawing.Point(221, 17)
+        Me.txt_MaSanPham.Name = "txt_MaSanPham"
+        Me.txt_MaSanPham.Size = New System.Drawing.Size(153, 26)
+        Me.txt_MaSanPham.TabIndex = 3
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(67, 135)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(114, 20)
+        Me.Label5.TabIndex = 2
+        Me.Label5.Text = "Tên Sản Phẩm"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(483, 135)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(78, 20)
+        Me.Label8.TabIndex = 1
+        Me.Label8.Text = "Số Lượng"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(67, 81)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(133, 20)
+        Me.Label4.TabIndex = 1
+        Me.Label4.Text = "Mã Số Sản Phẩm"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(483, 81)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(57, 20)
+        Me.Label7.TabIndex = 0
+        Me.Label7.Text = "Đơn Vị"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(483, 23)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(53, 20)
+        Me.Label6.TabIndex = 0
+        Me.Label6.Text = "Mô Tả"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(67, 23)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(109, 20)
+        Me.Label3.TabIndex = 0
+        Me.Label3.Text = "Mã Sản Phẩm"
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.AutoGenerateColumns = False
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.MaSanPhamDataGridViewTextBoxColumn, Me.MaSoSanPhamDataGridViewTextBoxColumn, Me.TenSanPhamDataGridViewTextBoxColumn, Me.MoTaDataGridViewTextBoxColumn, Me.DonViDataGridViewTextBoxColumn, Me.SoLuongTonDataGridViewTextBoxColumn})
+        Me.DataGridView1.DataSource = Me.SanPhamBindingSource
+        Me.DataGridView1.Location = New System.Drawing.Point(244, 293)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowHeadersWidth = 62
+        Me.DataGridView1.RowTemplate.Height = 28
+        Me.DataGridView1.Size = New System.Drawing.Size(838, 321)
+        Me.DataGridView1.TabIndex = 2
+        '
+        'MaSanPhamDataGridViewTextBoxColumn
+        '
+        Me.MaSanPhamDataGridViewTextBoxColumn.DataPropertyName = "MaSanPham"
+        Me.MaSanPhamDataGridViewTextBoxColumn.HeaderText = "MaSanPham"
+        Me.MaSanPhamDataGridViewTextBoxColumn.MinimumWidth = 8
+        Me.MaSanPhamDataGridViewTextBoxColumn.Name = "MaSanPhamDataGridViewTextBoxColumn"
+        Me.MaSanPhamDataGridViewTextBoxColumn.ReadOnly = True
+        Me.MaSanPhamDataGridViewTextBoxColumn.Width = 150
+        '
+        'MaSoSanPhamDataGridViewTextBoxColumn
+        '
+        Me.MaSoSanPhamDataGridViewTextBoxColumn.DataPropertyName = "MaSoSanPham"
+        Me.MaSoSanPhamDataGridViewTextBoxColumn.HeaderText = "MaSoSanPham"
+        Me.MaSoSanPhamDataGridViewTextBoxColumn.MinimumWidth = 8
+        Me.MaSoSanPhamDataGridViewTextBoxColumn.Name = "MaSoSanPhamDataGridViewTextBoxColumn"
+        Me.MaSoSanPhamDataGridViewTextBoxColumn.Width = 150
+        '
+        'TenSanPhamDataGridViewTextBoxColumn
+        '
+        Me.TenSanPhamDataGridViewTextBoxColumn.DataPropertyName = "TenSanPham"
+        Me.TenSanPhamDataGridViewTextBoxColumn.HeaderText = "TenSanPham"
+        Me.TenSanPhamDataGridViewTextBoxColumn.MinimumWidth = 8
+        Me.TenSanPhamDataGridViewTextBoxColumn.Name = "TenSanPhamDataGridViewTextBoxColumn"
+        Me.TenSanPhamDataGridViewTextBoxColumn.Width = 150
+        '
+        'MoTaDataGridViewTextBoxColumn
+        '
+        Me.MoTaDataGridViewTextBoxColumn.DataPropertyName = "MoTa"
+        Me.MoTaDataGridViewTextBoxColumn.HeaderText = "MoTa"
+        Me.MoTaDataGridViewTextBoxColumn.MinimumWidth = 8
+        Me.MoTaDataGridViewTextBoxColumn.Name = "MoTaDataGridViewTextBoxColumn"
+        Me.MoTaDataGridViewTextBoxColumn.Width = 150
+        '
+        'DonViDataGridViewTextBoxColumn
+        '
+        Me.DonViDataGridViewTextBoxColumn.DataPropertyName = "DonVi"
+        Me.DonViDataGridViewTextBoxColumn.HeaderText = "DonVi"
+        Me.DonViDataGridViewTextBoxColumn.MinimumWidth = 8
+        Me.DonViDataGridViewTextBoxColumn.Name = "DonViDataGridViewTextBoxColumn"
+        Me.DonViDataGridViewTextBoxColumn.Width = 150
+        '
+        'SoLuongTonDataGridViewTextBoxColumn
+        '
+        Me.SoLuongTonDataGridViewTextBoxColumn.DataPropertyName = "SoLuongTon"
+        Me.SoLuongTonDataGridViewTextBoxColumn.HeaderText = "SoLuongTon"
+        Me.SoLuongTonDataGridViewTextBoxColumn.MinimumWidth = 8
+        Me.SoLuongTonDataGridViewTextBoxColumn.Name = "SoLuongTonDataGridViewTextBoxColumn"
+        Me.SoLuongTonDataGridViewTextBoxColumn.Width = 150
+        '
+        'SanPhamBindingSource
+        '
+        Me.SanPhamBindingSource.DataMember = "SanPham"
+        Me.SanPhamBindingSource.DataSource = Me.QuanLyKhoHangDataSet1BindingSource
+        '
+        'QuanLyKhoHangDataSet1BindingSource
+        '
+        Me.QuanLyKhoHangDataSet1BindingSource.DataSource = Me.QuanLyKhoHangDataSet1
+        Me.QuanLyKhoHangDataSet1BindingSource.Position = 0
+        '
+        'QuanLyKhoHangDataSet1
+        '
+        Me.QuanLyKhoHangDataSet1.DataSetName = "QuanLyKhoHangDataSet1"
+        Me.QuanLyKhoHangDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(458, 28)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(416, 46)
+        Me.Label2.TabIndex = 3
+        Me.Label2.Text = "QUẢN LÍ SẢN PHẨM"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'QuanLyKhoHangDataSetBindingSource
+        '
+        Me.QuanLyKhoHangDataSetBindingSource.DataSource = GetType(QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet)
+        Me.QuanLyKhoHangDataSetBindingSource.Position = 0
+        '
+        'SanPhamTableAdapter
+        '
+        Me.SanPhamTableAdapter.ClearBeforeFill = True
+        '
+        'QuanLiSanPham
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(1097, 626)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.Panel1)
+        Me.Name = "QuanLiSanPham"
+        Me.Text = "QuanLiSanPham"
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SanPhamBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.QuanLyKhoHangDataSet1BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.QuanLyKhoHangDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.QuanLyKhoHangDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents txt_MaSanPham As TextBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Label2 As Label
+    Friend WithEvents txt_TenSanPham As TextBox
+    Friend WithEvents txt_MaSoSanPham As TextBox
+    Friend WithEvents txt_SoLuong As TextBox
+    Friend WithEvents txt_DonVi As TextBox
+    Friend WithEvents txt_MoTa As TextBox
+    Friend WithEvents btn_ThongKe As Button
+    Friend WithEvents btn_Sua As Button
+    Friend WithEvents btn_Xoa As Button
+    Friend WithEvents btn_Them As Button
+    Friend WithEvents QuanLyKhoHangDataSetBindingSource As BindingSource
+    Friend WithEvents QuanLyKhoHangDataSet1BindingSource As BindingSource
+    Friend WithEvents QuanLyKhoHangDataSet1 As QuanLyKhoHangDataSet1
+    Friend WithEvents SanPhamBindingSource As BindingSource
+    Friend WithEvents SanPhamTableAdapter As QuanLyKhoHangDataSet1TableAdapters.SanPhamTableAdapter
+    Friend WithEvents MaSanPhamDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents MaSoSanPhamDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents TenSanPhamDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents MoTaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents DonViDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents SoLuongTonDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
+    Friend WithEvents btn_LamMoi As Button
+End Class

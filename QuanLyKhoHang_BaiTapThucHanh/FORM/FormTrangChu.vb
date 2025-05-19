@@ -71,4 +71,28 @@
         Dim fl As New FormHoatDongKhoHang()
         LoadChildForm(fl)
     End Sub
+
+    Private Sub SảnPhẩmToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SảnPhẩmToolStripMenuItem.Click
+        Dim fl As New QuanLiSanPham()
+        LoadChildForm(fl)
+    End Sub
+
+    Private Sub NhàCungCấpToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NhàCungCấpToolStripMenuItem.Click
+        Dim fl As New QuanLiNCC()
+        LoadChildForm(fl)
+    End Sub
+
+    Private Sub KhoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KhoToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub PhiếuNhậpToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PhiếuNhậpToolStripMenuItem.Click
+        Dim fl As New PhieuNhap()
+        LoadChildForm(fl)
+    End Sub
+
+    Private Sub PhiêuXuấtToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PhiêuXuấtToolStripMenuItem.Click
+        Dim fl As New PhieuXuat()
+        LoadChildForm(fl)
+    End Sub
 End Class

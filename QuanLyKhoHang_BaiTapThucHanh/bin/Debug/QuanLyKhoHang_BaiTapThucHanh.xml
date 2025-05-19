@@ -1,0 +1,531 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+QuanLyKhoHang_BaiTapThucHanh
+</name>
+</assembly>
+<members>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.analytics">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.box">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.ChatGPT_Image_May_18__2025__07_31_00_PM">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.ChatGPT_Image_May_18__2025__07_38_06_PM">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.ChatGPT_Image_May_18__2025__09_06_08_PM">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.ChatGPT_Image_May_18__2025__09_13_28_PM">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.f8de25e3_b954_4a1c_a80a_d64c8212d74a">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.home">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.logout">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.NenBieuDo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.pngtree_vector_users_icon_png_image_856952">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.printer">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.product__1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.product_selling">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.report">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.sdf">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.transport">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.User_icon_cp_svg">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.warehouse">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.DataSetNhapTonXuatSanPham">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.DataSetNhapTonXuatSanPham.DataTable1DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.DataSetNhapTonXuatSanPham.DataTable1Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.DataSetNhapTonXuatSanPham.DataTable1RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1.AdminDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1.LichSuGiaoDichDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1.NhaCungCapDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1.SanPhamDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1.AdminRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1.LichSuGiaoDichRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1.NhaCungCapRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1.SanPhamRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1.AdminRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1.LichSuGiaoDichRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1.NhaCungCapRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1.SanPhamRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1TableAdapters.AdminTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1TableAdapters.LichSuGiaoDichTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1TableAdapters.NhaCungCapTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1TableAdapters.SanPhamTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1TableAdapters.TableAdapterManager.UpdateAll(QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet2">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet2.NhaCungCapDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet2.NhaCungCapRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet2.NhaCungCapRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet2TableAdapters.NhaCungCapTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet2TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet2TableAdapters.TableAdapterManager.UpdateUpdatedRows(QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet2,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet2TableAdapters.TableAdapterManager.UpdateInsertedRows(QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet2TableAdapters.TableAdapterManager.UpdateDeletedRows(QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet2TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet2TableAdapters.TableAdapterManager.UpdateAll(QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet2)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet2TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet2TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet3">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet3.pro_PhieuNhapDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet3.pro_PhieuNhapRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet3.pro_PhieuNhapRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet3TableAdapters.pro_PhieuNhapTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet3TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet3TableAdapters.TableAdapterManager.UpdateUpdatedRows(QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet3,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet3TableAdapters.TableAdapterManager.UpdateInsertedRows(QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet3,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet3TableAdapters.TableAdapterManager.UpdateDeletedRows(QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet3,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet3TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet3TableAdapters.TableAdapterManager.UpdateAll(QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet3)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet3TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet3TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet4">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet4.pro_PhieuXuatDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet4.pro_PhieuXuatRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet4.pro_PhieuXuatRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet4TableAdapters.pro_PhieuXuatTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet4TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet4TableAdapters.TableAdapterManager.UpdateUpdatedRows(QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet4,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet4TableAdapters.TableAdapterManager.UpdateInsertedRows(QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet4,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet4TableAdapters.TableAdapterManager.UpdateDeletedRows(QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet4,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet4TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet4TableAdapters.TableAdapterManager.UpdateAll(QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet4)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet4TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet4TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5.pro_PhieuNhapDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5.pro_PhieuNhapRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5.pro_PhieuNhapRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5TableAdapters.pro_PhieuNhapTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5TableAdapters.TableAdapterManager.UpdateUpdatedRows(QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5TableAdapters.TableAdapterManager.UpdateInsertedRows(QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5TableAdapters.TableAdapterManager.UpdateDeletedRows(QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5TableAdapters.TableAdapterManager.UpdateAll(QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>

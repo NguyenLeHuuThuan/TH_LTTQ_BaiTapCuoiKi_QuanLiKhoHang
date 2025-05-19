@@ -166,10 +166,59 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="FORM\QuanLiSanPham.Designer.vb">
+      <DependentUpon>QuanLiSanPham.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\QuanLiSanPham.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\QuanLiNCC.Designer.vb">
+      <DependentUpon>QuanLiNCC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\QuanLiNCC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\PhieuXuat.Designer.vb">
+      <DependentUpon>PhieuXuat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\PhieuXuat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\PhieuNhap.Designer.vb">
+      <DependentUpon>PhieuNhap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\PhieuNhap.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="QuanLyKhoHangDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyKhoHangDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyKhoHangDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyKhoHangDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyKhoHangDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyKhoHangDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyKhoHangDataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyKhoHangDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyKhoHangDataSet4.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyKhoHangDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyKhoHangDataSet5.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyKhoHangDataSet5.xsd</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -197,11 +246,23 @@
     <EmbeddedResource Include="FORM\FormTrangChu.resx">
       <DependentUpon>FormTrangChu.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FORM\QuanLiSanPham.resx">
+      <DependentUpon>QuanLiSanPham.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\QuanLiNCC.resx">
+      <DependentUpon>QuanLiNCC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\PhieuXuat.resx">
+      <DependentUpon>PhieuXuat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\PhieuNhap.resx">
+      <DependentUpon>PhieuNhap.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report\Report_TongHopNhapXuatTon.rdlc" />
   </ItemGroup>
@@ -254,8 +315,65 @@
     <None Include="QuanLyKhoHangDataSet.xss">
       <DependentUpon>QuanLyKhoHangDataSet.xsd</DependentUpon>
     </None>
+    <None Include="QuanLyKhoHangDataSet1.xsc">
+      <DependentUpon>QuanLyKhoHangDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhoHangDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyKhoHangDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyKhoHangDataSet1.xss">
+      <DependentUpon>QuanLyKhoHangDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhoHangDataSet2.xsc">
+      <DependentUpon>QuanLyKhoHangDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhoHangDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyKhoHangDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyKhoHangDataSet2.xss">
+      <DependentUpon>QuanLyKhoHangDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhoHangDataSet3.xsc">
+      <DependentUpon>QuanLyKhoHangDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhoHangDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyKhoHangDataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyKhoHangDataSet3.xss">
+      <DependentUpon>QuanLyKhoHangDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhoHangDataSet4.xsc">
+      <DependentUpon>QuanLyKhoHangDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhoHangDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyKhoHangDataSet4.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyKhoHangDataSet4.xss">
+      <DependentUpon>QuanLyKhoHangDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhoHangDataSet5.xsc">
+      <DependentUpon>QuanLyKhoHangDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhoHangDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyKhoHangDataSet5.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyKhoHangDataSet5.xss">
+      <DependentUpon>QuanLyKhoHangDataSet5.xsd</DependentUpon>
+    </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="img\pngtree-vector-users-icon-png-image_856952.jpg" />
   </ItemGroup>

@@ -1,32 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\IT\\VBNET\\QuanLyKhoHang\\",
+  "WorkspaceRootPath": "C:\\study\\ChuongTrinhDaoTao\\Nam2\\hk2\\TH_LapTrinhTrucQuan\\TH_LTTQ_BaiTapCuoiKi_QuanLiKhoHang\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{54B8B24A-2D3C-407A-97A2-6E13A948C6F0}|QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj|E:\\IT\\VBNET\\QuanLyKhoHang\\quanlykhohang_baitapthuchanh\\form\\database.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{54B8B24A-2D3C-407A-97A2-6E13A948C6F0}|QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj|solutionrelative:quanlykhohang_baitapthuchanh\\form\\database.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{54B8B24A-2D3C-407A-97A2-6E13A948C6F0}|QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj|c:\\study\\chuongtrinhdaotao\\nam2\\hk2\\th_laptrinhtrucquan\\th_lttq_baitapcuoiki_quanlikhohang\\quanlykhohang_baitapthuchanh\\form\\phieuxuat.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{54B8B24A-2D3C-407A-97A2-6E13A948C6F0}|QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj|solutionrelative:quanlykhohang_baitapthuchanh\\form\\phieuxuat.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54B8B24A-2D3C-407A-97A2-6E13A948C6F0}|QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj|e:\\it\\vbnet\\quanlykhohang\\quanlykhohang_baitapthuchanh\\report\\report_tonghopnhapxuatton.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
-      "RelativeMoniker": "D:0:0:{54B8B24A-2D3C-407A-97A2-6E13A948C6F0}|QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj|solutionrelative:quanlykhohang_baitapthuchanh\\report\\report_tonghopnhapxuatton.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
+      "AbsoluteMoniker": "D:0:0:{54B8B24A-2D3C-407A-97A2-6E13A948C6F0}|QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj|C:\\study\\ChuongTrinhDaoTao\\Nam2\\hk2\\TH_LapTrinhTrucQuan\\TH_LTTQ_BaiTapCuoiKi_QuanLiKhoHang\\quanlykhohang_baitapthuchanh\\form\\quanlincc.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{54B8B24A-2D3C-407A-97A2-6E13A948C6F0}|QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj|solutionrelative:quanlykhohang_baitapthuchanh\\form\\quanlincc.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|QuanLyKhoHang_BaiTapThucHanh||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{54B8B24A-2D3C-407A-97A2-6E13A948C6F0}|QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj|c:\\study\\chuongtrinhdaotao\\nam2\\hk2\\th_laptrinhtrucquan\\th_lttq_baitapcuoiki_quanlikhohang\\quanlykhohang_baitapthuchanh\\form\\phieunhap.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{54B8B24A-2D3C-407A-97A2-6E13A948C6F0}|QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj|solutionrelative:quanlykhohang_baitapthuchanh\\form\\phieunhap.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54B8B24A-2D3C-407A-97A2-6E13A948C6F0}|QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj|E:\\IT\\VBNET\\QuanLyKhoHang\\quanlykhohang_baitapthuchanh\\form\\formtonghopnhapxuatton.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{54B8B24A-2D3C-407A-97A2-6E13A948C6F0}|QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj|solutionrelative:quanlykhohang_baitapthuchanh\\form\\formtonghopnhapxuatton.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{54B8B24A-2D3C-407A-97A2-6E13A948C6F0}|QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj|c:\\study\\chuongtrinhdaotao\\nam2\\hk2\\th_laptrinhtrucquan\\th_lttq_baitapcuoiki_quanlikhohang\\quanlykhohang_baitapthuchanh\\form\\quanlisanpham.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{54B8B24A-2D3C-407A-97A2-6E13A948C6F0}|QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj|solutionrelative:quanlykhohang_baitapthuchanh\\form\\quanlisanpham.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54B8B24A-2D3C-407A-97A2-6E13A948C6F0}|QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj|E:\\IT\\VBNET\\QuanLyKhoHang\\quanlykhohang_baitapthuchanh\\dataset\\datasetnhaptonxuatsanpham.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
-      "RelativeMoniker": "D:0:0:{54B8B24A-2D3C-407A-97A2-6E13A948C6F0}|QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj|solutionrelative:quanlykhohang_baitapthuchanh\\dataset\\datasetnhaptonxuatsanpham.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54B8B24A-2D3C-407A-97A2-6E13A948C6F0}|QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj|E:\\IT\\VBNET\\QuanLyKhoHang\\quanlykhohang_baitapthuchanh\\form\\formtonghopnhapxuatton.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{54B8B24A-2D3C-407A-97A2-6E13A948C6F0}|QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj|solutionrelative:quanlykhohang_baitapthuchanh\\form\\formtonghopnhapxuatton.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54B8B24A-2D3C-407A-97A2-6E13A948C6F0}|QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj|e:\\it\\vbnet\\quanlykhohang\\quanlykhohang_baitapthuchanh\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|8998e48e-b89a-4034-b66e-353d8c1fdc2e"
+      "AbsoluteMoniker": "D:0:0:{54B8B24A-2D3C-407A-97A2-6E13A948C6F0}|QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj|c:\\study\\chuongtrinhdaotao\\nam2\\hk2\\th_laptrinhtrucquan\\th_lttq_baitapcuoiki_quanlikhohang\\quanlykhohang_baitapthuchanh\\form\\formtrangchu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{54B8B24A-2D3C-407A-97A2-6E13A948C6F0}|QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj|solutionrelative:quanlykhohang_baitapthuchanh\\form\\formtrangchu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -36,80 +30,66 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "QuanLiSanPham.vb [Design]",
+              "DocumentMoniker": "C:\\study\\ChuongTrinhDaoTao\\Nam2\\hk2\\TH_LapTrinhTrucQuan\\TH_LTTQ_BaiTapCuoiKi_QuanLiKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\FORM\\QuanLiSanPham.vb",
+              "RelativeDocumentMoniker": "QuanLyKhoHang_BaiTapThucHanh\\FORM\\QuanLiSanPham.vb",
+              "ToolTip": "C:\\study\\ChuongTrinhDaoTao\\Nam2\\hk2\\TH_LapTrinhTrucQuan\\TH_LTTQ_BaiTapCuoiKi_QuanLiKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\FORM\\QuanLiSanPham.vb [Design]*",
+              "RelativeToolTip": "QuanLyKhoHang_BaiTapThucHanh\\FORM\\QuanLiSanPham.vb [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-05-19T15:47:19.707Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormTrangChu.vb [Design]",
+              "DocumentMoniker": "C:\\study\\ChuongTrinhDaoTao\\Nam2\\hk2\\TH_LapTrinhTrucQuan\\TH_LTTQ_BaiTapCuoiKi_QuanLiKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\FORM\\FormTrangChu.vb",
+              "RelativeDocumentMoniker": "QuanLyKhoHang_BaiTapThucHanh\\FORM\\FormTrangChu.vb",
+              "ToolTip": "C:\\study\\ChuongTrinhDaoTao\\Nam2\\hk2\\TH_LapTrinhTrucQuan\\TH_LTTQ_BaiTapCuoiKi_QuanLiKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\FORM\\FormTrangChu.vb [Design]",
+              "RelativeToolTip": "QuanLyKhoHang_BaiTapThucHanh\\FORM\\FormTrangChu.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-05-19T15:46:23.665Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "QuanLyKhoHang_BaiTapThucHanh",
-              "DocumentMoniker": "E:\\IT\\VBNET\\QuanLyKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj",
-              "RelativeDocumentMoniker": "QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj",
-              "ToolTip": "E:\\IT\\VBNET\\QuanLyKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj",
-              "RelativeToolTip": "QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-05-19T02:16:28.956Z",
-              "EditorCaption": ""
+              "Title": "PhieuNhap.vb [Design]",
+              "DocumentMoniker": "C:\\study\\ChuongTrinhDaoTao\\Nam2\\hk2\\TH_LapTrinhTrucQuan\\TH_LTTQ_BaiTapCuoiKi_QuanLiKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\FORM\\PhieuNhap.vb",
+              "RelativeDocumentMoniker": "QuanLyKhoHang_BaiTapThucHanh\\FORM\\PhieuNhap.vb",
+              "ToolTip": "C:\\study\\ChuongTrinhDaoTao\\Nam2\\hk2\\TH_LapTrinhTrucQuan\\TH_LTTQ_BaiTapCuoiKi_QuanLiKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\FORM\\PhieuNhap.vb [Design]*",
+              "RelativeToolTip": "QuanLyKhoHang_BaiTapThucHanh\\FORM\\PhieuNhap.vb [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-05-19T15:31:43.268Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Report_TongHopNhapXuatTon.rdlc [Design]",
-              "DocumentMoniker": "E:\\IT\\VBNET\\QuanLyKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\Report\\Report_TongHopNhapXuatTon.rdlc",
-              "RelativeDocumentMoniker": "QuanLyKhoHang_BaiTapThucHanh\\Report\\Report_TongHopNhapXuatTon.rdlc",
-              "ToolTip": "E:\\IT\\VBNET\\QuanLyKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\Report\\Report_TongHopNhapXuatTon.rdlc [Design]",
-              "RelativeToolTip": "QuanLyKhoHang_BaiTapThucHanh\\Report\\Report_TongHopNhapXuatTon.rdlc [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
-              "WhenOpened": "2025-05-18T17:22:52.327Z",
+              "Title": "QuanLiNCC.vb [Design]",
+              "DocumentMoniker": "C:\\study\\ChuongTrinhDaoTao\\Nam2\\hk2\\TH_LapTrinhTrucQuan\\TH_LTTQ_BaiTapCuoiKi_QuanLiKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\FORM\\QuanLiNCC.vb",
+              "RelativeDocumentMoniker": "QuanLyKhoHang_BaiTapThucHanh\\FORM\\QuanLiNCC.vb",
+              "ToolTip": "C:\\study\\ChuongTrinhDaoTao\\Nam2\\hk2\\TH_LapTrinhTrucQuan\\TH_LTTQ_BaiTapCuoiKi_QuanLiKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\FORM\\QuanLiNCC.vb [Design]*",
+              "RelativeToolTip": "QuanLyKhoHang_BaiTapThucHanh\\FORM\\QuanLiNCC.vb [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-05-19T14:41:28.161Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Database.vb",
-              "DocumentMoniker": "E:\\IT\\VBNET\\QuanLyKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\FORM\\Database.vb",
-              "RelativeDocumentMoniker": "QuanLyKhoHang_BaiTapThucHanh\\FORM\\Database.vb",
-              "ToolTip": "E:\\IT\\VBNET\\QuanLyKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\FORM\\Database.vb*",
-              "RelativeToolTip": "QuanLyKhoHang_BaiTapThucHanh\\FORM\\Database.vb*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABaAAAAAAAAAA==",
+              "Title": "PhieuXuat.vb [Design]",
+              "DocumentMoniker": "C:\\study\\ChuongTrinhDaoTao\\Nam2\\hk2\\TH_LapTrinhTrucQuan\\TH_LTTQ_BaiTapCuoiKi_QuanLiKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\FORM\\PhieuXuat.vb",
+              "RelativeDocumentMoniker": "QuanLyKhoHang_BaiTapThucHanh\\FORM\\PhieuXuat.vb",
+              "ToolTip": "C:\\study\\ChuongTrinhDaoTao\\Nam2\\hk2\\TH_LapTrinhTrucQuan\\TH_LTTQ_BaiTapCuoiKi_QuanLiKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\FORM\\PhieuXuat.vb [Design]*",
+              "RelativeToolTip": "QuanLyKhoHang_BaiTapThucHanh\\FORM\\PhieuXuat.vb [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-05-19T02:14:17.335Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FormTongHopNhapXuatTon.vb",
-              "DocumentMoniker": "E:\\IT\\VBNET\\QuanLyKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\FORM\\FormTongHopNhapXuatTon.vb",
-              "RelativeDocumentMoniker": "QuanLyKhoHang_BaiTapThucHanh\\FORM\\FormTongHopNhapXuatTon.vb",
-              "ToolTip": "E:\\IT\\VBNET\\QuanLyKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\FORM\\FormTongHopNhapXuatTon.vb",
-              "RelativeToolTip": "QuanLyKhoHang_BaiTapThucHanh\\FORM\\FormTongHopNhapXuatTon.vb",
-              "ViewState": "AgIAAAMAAAAAAAAAAAA2wAwAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-05-19T02:12:37.87Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DataSetNhapTonXuatSanPham.xsd",
-              "DocumentMoniker": "E:\\IT\\VBNET\\QuanLyKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\Dataset\\DataSetNhapTonXuatSanPham.xsd",
-              "RelativeDocumentMoniker": "QuanLyKhoHang_BaiTapThucHanh\\Dataset\\DataSetNhapTonXuatSanPham.xsd",
-              "ToolTip": "E:\\IT\\VBNET\\QuanLyKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\Dataset\\DataSetNhapTonXuatSanPham.xsd",
-              "RelativeToolTip": "QuanLyKhoHang_BaiTapThucHanh\\Dataset\\DataSetNhapTonXuatSanPham.xsd",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
-              "WhenOpened": "2025-05-19T02:01:25.317Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormTongHopNhapXuatTon.vb [Design]",
-              "DocumentMoniker": "E:\\IT\\VBNET\\QuanLyKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\FORM\\FormTongHopNhapXuatTon.vb",
-              "RelativeDocumentMoniker": "QuanLyKhoHang_BaiTapThucHanh\\FORM\\FormTongHopNhapXuatTon.vb",
-              "ToolTip": "E:\\IT\\VBNET\\QuanLyKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\FORM\\FormTongHopNhapXuatTon.vb [Design]",
-              "RelativeToolTip": "QuanLyKhoHang_BaiTapThucHanh\\FORM\\FormTongHopNhapXuatTon.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-05-18T17:20:30.598Z",
+              "WhenOpened": "2025-05-19T14:41:17.217Z",
               "EditorCaption": " [Design]"
             }
           ]
