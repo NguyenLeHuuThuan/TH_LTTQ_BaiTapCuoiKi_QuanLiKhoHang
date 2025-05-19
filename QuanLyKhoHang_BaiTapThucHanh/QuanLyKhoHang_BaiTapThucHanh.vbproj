@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{54B8B24A-2D3C-407A-97A2-6E13A948C6F0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>QuanLyKhoHang_BaiTapThucHanh.My.MyApplication</StartupObject>
+    <RootNamespace>QuanLyKhoHang_BaiTapThucHanh</RootNamespace>
+    <AssemblyName>QuanLyKhoHang_BaiTapThucHanh</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>QuanLyKhoHang_BaiTapThucHanh.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>QuanLyKhoHang_BaiTapThucHanh.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dataset\DataSetNhapTonXuatSanPham.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetNhapTonXuatSanPham.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\Database.vb" />
+    <Compile Include="FORM\FormBaoCaoThongKe.Designer.vb">
+      <DependentUpon>FormBaoCaoThongKe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\FormBaoCaoThongKe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\FormBieuDo.Designer.vb">
+      <DependentUpon>FormBieuDo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\FormBieuDo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\FormBieuDoNhapXuatKho.Designer.vb">
+      <DependentUpon>FormBieuDoNhapXuatKho.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\FormBieuDoNhapXuatKho.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\FormDangNhap.Designer.vb">
+      <DependentUpon>FormDangNhap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\FormDangNhap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\FormHoatDongKhoHang.Designer.vb">
+      <DependentUpon>FormHoatDongKhoHang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\FormHoatDongKhoHang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\FormLoad.Designer.vb">
+      <DependentUpon>FormLoad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\FormLoad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\FormTongHopNhapXuatTon.Designer.vb">
+      <DependentUpon>FormTongHopNhapXuatTon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\FormTongHopNhapXuatTon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\FormTrangChu.Designer.vb">
+      <DependentUpon>FormTrangChu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\FormTrangChu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="QuanLyKhoHangDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLyKhoHangDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FORM\FormBaoCaoThongKe.resx">
+      <DependentUpon>FormBaoCaoThongKe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\FormBieuDo.resx">
+      <DependentUpon>FormBieuDo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\FormBieuDoNhapXuatKho.resx">
+      <DependentUpon>FormBieuDoNhapXuatKho.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\FormDangNhap.resx">
+      <DependentUpon>FormDangNhap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\FormHoatDongKhoHang.resx">
+      <DependentUpon>FormHoatDongKhoHang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\FormLoad.resx">
+      <DependentUpon>FormLoad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\FormTongHopNhapXuatTon.resx">
+      <DependentUpon>FormTongHopNhapXuatTon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\FormTrangChu.resx">
+      <DependentUpon>FormTrangChu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Report_TongHopNhapXuatTon.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dataset\DataSetNhapTonXuatSanPham.xsc">
+      <DependentUpon>DataSetNhapTonXuatSanPham.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSetNhapTonXuatSanPham.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetNhapTonXuatSanPham.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Dataset\DataSetNhapTonXuatSanPham.xss">
+      <DependentUpon>DataSetNhapTonXuatSanPham.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\DataSetNhapTonXuatSanPham.datasource" />
+    <None Include="My Project\DataSources\DataSetNhapTonXuatSanPham.DataTable1DataTable.datasource" />
+    <None Include="My Project\DataSources\DataSetNhapTonXuatSanPham.DataTable1Row.datasource" />
+    <None Include="My Project\DataSources\DataSetNhapTonXuatSanPham.DataTable1RowChangeEvent.datasource" />
+    <None Include="My Project\DataSources\DataSetNhapTonXuatSanPham.DataTable1RowChangeEventHandler.datasource" />
+    <None Include="My Project\DataSources\FormBaoCaoThongKe.datasource" />
+    <None Include="My Project\DataSources\FormBieuDoNhapXuatKho.datasource" />
+    <None Include="My Project\DataSources\FormBieuDoTyLeNhapNCC.datasource" />
+    <None Include="My Project\DataSources\FormDangNhap.datasource" />
+    <None Include="My Project\DataSources\FormHoatDongKhoHang.datasource" />
+    <None Include="My Project\DataSources\FormLoad.datasource" />
+    <None Include="My Project\DataSources\FormTrangChu.datasource" />
+    <None Include="My Project\DataSources\QuanLyKhoHangDataSet.datasource" />
+    <None Include="My Project\DataSources\QuanLyKhoHang_BaiTapThucHanh.My.MyApplication.datasource" />
+    <None Include="My Project\DataSources\QuanLyKhoHang_BaiTapThucHanh.My.MySettings.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="QuanLyKhoHangDataSet.xsc">
+      <DependentUpon>QuanLyKhoHangDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuanLyKhoHangDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanLyKhoHangDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanLyKhoHangDataSet.xss">
+      <DependentUpon>QuanLyKhoHangDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="img\pngtree-vector-users-icon-png-image_856952.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\User_icon-cp.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\ChatGPT Image May 18, 2025, 07_31_00 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\ChatGPT Image May 18, 2025, 07_38_06 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\analytics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\product %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\product-selling.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\transport.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\warehouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\ChatGPT Image May 18, 2025, 09_06_08 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\ChatGPT Image May 18, 2025, 09_13_28 PM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\sdf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\f8de25e3-b954-4a1c-a80a-d64c8212d74a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\NenBieuDo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\Loader.cs" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

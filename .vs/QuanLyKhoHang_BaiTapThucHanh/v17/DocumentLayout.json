@@ -1,0 +1,120 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\IT\\VBNET\\QuanLyKhoHang\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{54B8B24A-2D3C-407A-97A2-6E13A948C6F0}|QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj|E:\\IT\\VBNET\\QuanLyKhoHang\\quanlykhohang_baitapthuchanh\\form\\database.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{54B8B24A-2D3C-407A-97A2-6E13A948C6F0}|QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj|solutionrelative:quanlykhohang_baitapthuchanh\\form\\database.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B8B24A-2D3C-407A-97A2-6E13A948C6F0}|QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj|e:\\it\\vbnet\\quanlykhohang\\quanlykhohang_baitapthuchanh\\report\\report_tonghopnhapxuatton.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}",
+      "RelativeMoniker": "D:0:0:{54B8B24A-2D3C-407A-97A2-6E13A948C6F0}|QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj|solutionrelative:quanlykhohang_baitapthuchanh\\report\\report_tonghopnhapxuatton.rdlc||{46F6D2A1-5E86-4080-A799-01F3D0E23796}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|QuanLyKhoHang_BaiTapThucHanh||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B8B24A-2D3C-407A-97A2-6E13A948C6F0}|QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj|E:\\IT\\VBNET\\QuanLyKhoHang\\quanlykhohang_baitapthuchanh\\form\\formtonghopnhapxuatton.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{54B8B24A-2D3C-407A-97A2-6E13A948C6F0}|QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj|solutionrelative:quanlykhohang_baitapthuchanh\\form\\formtonghopnhapxuatton.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B8B24A-2D3C-407A-97A2-6E13A948C6F0}|QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj|E:\\IT\\VBNET\\QuanLyKhoHang\\quanlykhohang_baitapthuchanh\\dataset\\datasetnhaptonxuatsanpham.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "RelativeMoniker": "D:0:0:{54B8B24A-2D3C-407A-97A2-6E13A948C6F0}|QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj|solutionrelative:quanlykhohang_baitapthuchanh\\dataset\\datasetnhaptonxuatsanpham.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B8B24A-2D3C-407A-97A2-6E13A948C6F0}|QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj|E:\\IT\\VBNET\\QuanLyKhoHang\\quanlykhohang_baitapthuchanh\\form\\formtonghopnhapxuatton.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{54B8B24A-2D3C-407A-97A2-6E13A948C6F0}|QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj|solutionrelative:quanlykhohang_baitapthuchanh\\form\\formtonghopnhapxuatton.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54B8B24A-2D3C-407A-97A2-6E13A948C6F0}|QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj|e:\\it\\vbnet\\quanlykhohang\\quanlykhohang_baitapthuchanh\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|8998e48e-b89a-4034-b66e-353d8c1fdc2e"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QuanLyKhoHang_BaiTapThucHanh",
+              "DocumentMoniker": "E:\\IT\\VBNET\\QuanLyKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj",
+              "RelativeDocumentMoniker": "QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj",
+              "ToolTip": "E:\\IT\\VBNET\\QuanLyKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj",
+              "RelativeToolTip": "QuanLyKhoHang_BaiTapThucHanh\\QuanLyKhoHang_BaiTapThucHanh.vbproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-19T02:16:28.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Report_TongHopNhapXuatTon.rdlc [Design]",
+              "DocumentMoniker": "E:\\IT\\VBNET\\QuanLyKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\Report\\Report_TongHopNhapXuatTon.rdlc",
+              "RelativeDocumentMoniker": "QuanLyKhoHang_BaiTapThucHanh\\Report\\Report_TongHopNhapXuatTon.rdlc",
+              "ToolTip": "E:\\IT\\VBNET\\QuanLyKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\Report\\Report_TongHopNhapXuatTon.rdlc [Design]",
+              "RelativeToolTip": "QuanLyKhoHang_BaiTapThucHanh\\Report\\Report_TongHopNhapXuatTon.rdlc [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001755|",
+              "WhenOpened": "2025-05-18T17:22:52.327Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Database.vb",
+              "DocumentMoniker": "E:\\IT\\VBNET\\QuanLyKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\FORM\\Database.vb",
+              "RelativeDocumentMoniker": "QuanLyKhoHang_BaiTapThucHanh\\FORM\\Database.vb",
+              "ToolTip": "E:\\IT\\VBNET\\QuanLyKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\FORM\\Database.vb",
+              "RelativeToolTip": "QuanLyKhoHang_BaiTapThucHanh\\FORM\\Database.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-05-19T02:14:17.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormTongHopNhapXuatTon.vb",
+              "DocumentMoniker": "E:\\IT\\VBNET\\QuanLyKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\FORM\\FormTongHopNhapXuatTon.vb",
+              "RelativeDocumentMoniker": "QuanLyKhoHang_BaiTapThucHanh\\FORM\\FormTongHopNhapXuatTon.vb",
+              "ToolTip": "E:\\IT\\VBNET\\QuanLyKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\FORM\\FormTongHopNhapXuatTon.vb",
+              "RelativeToolTip": "QuanLyKhoHang_BaiTapThucHanh\\FORM\\FormTongHopNhapXuatTon.vb",
+              "ViewState": "AgIAAAMAAAAAAAAAAAA2wAwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-05-19T02:12:37.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DataSetNhapTonXuatSanPham.xsd",
+              "DocumentMoniker": "E:\\IT\\VBNET\\QuanLyKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\Dataset\\DataSetNhapTonXuatSanPham.xsd",
+              "RelativeDocumentMoniker": "QuanLyKhoHang_BaiTapThucHanh\\Dataset\\DataSetNhapTonXuatSanPham.xsd",
+              "ToolTip": "E:\\IT\\VBNET\\QuanLyKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\Dataset\\DataSetNhapTonXuatSanPham.xsd",
+              "RelativeToolTip": "QuanLyKhoHang_BaiTapThucHanh\\Dataset\\DataSetNhapTonXuatSanPham.xsd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
+              "WhenOpened": "2025-05-19T02:01:25.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormTongHopNhapXuatTon.vb [Design]",
+              "DocumentMoniker": "E:\\IT\\VBNET\\QuanLyKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\FORM\\FormTongHopNhapXuatTon.vb",
+              "RelativeDocumentMoniker": "QuanLyKhoHang_BaiTapThucHanh\\FORM\\FormTongHopNhapXuatTon.vb",
+              "ToolTip": "E:\\IT\\VBNET\\QuanLyKhoHang\\QuanLyKhoHang_BaiTapThucHanh\\FORM\\FormTongHopNhapXuatTon.vb [Design]",
+              "RelativeToolTip": "QuanLyKhoHang_BaiTapThucHanh\\FORM\\FormTongHopNhapXuatTon.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-05-18T17:20:30.598Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
