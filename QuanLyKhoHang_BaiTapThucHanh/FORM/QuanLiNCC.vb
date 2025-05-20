@@ -5,8 +5,45 @@ Public Class QuanLiNCC
     Dim currentRowIndex As Integer = -1
     Private Sub QuanLiNCC_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'QuanLyKhoHangDataSet2.NhaCungCap' table. You can move, or remove it, as needed.
-        Me.NhaCungCapTableAdapter.Fill(Me.QuanLyKhoHangDataSet2.NhaCungCap)
+        ''Me.NhaCungCapTableAdapter.Fill(Me.QuanLyKhoHangDataSet2.NhaCungCap)
+        LoadNhaCungCap()
+    End Sub
+    Private Sub LoadNhaCungCap()
 
+        Dim query As String = "SELECT MaNhaCungCap, MaSoNhaCungCap, TenNhaCungCap, SoDienThoai FROM NhaCungCap"
+
+        Using conn As New SqlConnection(connectionString)
+            Try
+                conn.Open()
+                Dim cmd As New SqlCommand(query, conn)
+                Dim reader As SqlDataReader = cmd.ExecuteReader()
+
+                ' Xóa cột và dòng hiện tại nếu có
+                DataGridView1.Columns.Clear()
+                DataGridView1.Rows.Clear()
+                DataGridView1.AutoGenerateColumns = False
+
+                ' Tạo các cột thủ công
+                DataGridView1.Columns.Add("MaNhaCungCap", "Mã Nhà Cung Cấp")
+                DataGridView1.Columns.Add("MaSoNhaCungCap", "Mã Số NCC")
+                DataGridView1.Columns.Add("TenNhaCungCap", "Tên Nhà Cung Cấp")
+                DataGridView1.Columns.Add("SoDienThoai", "Số Điện Thoại")
+
+                ' Đổ dữ liệu từng dòng vào DataGridView
+                While reader.Read()
+                    DataGridView1.Rows.Add(
+                    reader("MaNhaCungCap"),
+                    reader("MaSoNhaCungCap"),
+                    reader("TenNhaCungCap"),
+                    reader("SoDienThoai")
+                )
+                End While
+
+                reader.Close()
+            Catch ex As Exception
+                MessageBox.Show("Lỗi khi tải dữ liệu NCC: " & ex.Message)
+            End Try
+        End Using
     End Sub
 
     Private Sub clearText()
@@ -55,9 +92,9 @@ Public Class QuanLiNCC
 
             MessageBox.Show("Lưu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information)
             ' Cập nhật lại DataGridView
-            Me.NhaCungCapTableAdapter.Fill(Me.QuanLyKhoHangDataSet2.NhaCungCap)
+            'Me.NhaCungCapTableAdapter.Fill(Me.QuanLyKhoHangDataSet2.NhaCungCap)
             clearText()
-
+            LoadNhaCungCap()
         Catch ex As Exception
             MessageBox.Show("Lỗi khi lưu: " & ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
@@ -82,9 +119,9 @@ Public Class QuanLiNCC
 
             MessageBox.Show("Xoá thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information)
             ' Cập nhật lại DataGridView
-            Me.NhaCungCapTableAdapter.Fill(Me.QuanLyKhoHangDataSet2.NhaCungCap)
+            'Me.NhaCungCapTableAdapter.Fill(Me.QuanLyKhoHangDataSet2.NhaCungCap)
             clearText()
-
+            LoadNhaCungCap()
         Catch ex As Exception
             MessageBox.Show("Lỗi khi Xoá: " & ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
@@ -119,9 +156,9 @@ Public Class QuanLiNCC
             End Using
             MessageBox.Show("update thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information)
             ' Cập nhật lại DataGridView
-            Me.NhaCungCapTableAdapter.Fill(Me.QuanLyKhoHangDataSet2.NhaCungCap)
+            'Me.NhaCungCapTableAdapter.Fill(Me.QuanLyKhoHangDataSet2.NhaCungCap)
             clearText()
-
+            LoadNhaCungCap()
         Catch ex As Exception
             MessageBox.Show("Lỗi khi update: " & ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
@@ -131,4 +168,6 @@ Public Class QuanLiNCC
         clearText()
 
     End Sub
+
+
 End Class

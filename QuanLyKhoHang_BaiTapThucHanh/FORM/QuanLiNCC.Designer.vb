@@ -39,19 +39,15 @@ Partial Class QuanLiNCC
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.MaNhaCungCapDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MaSoNhaCungCapDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TenNhaCungCapDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SoDienThoaiDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NhaCungCapBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.QuanLyKhoHangDataSet2 = New QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet2()
         Me.NhaCungCapTableAdapter = New QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet2TableAdapters.NhaCungCapTableAdapter()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NhaCungCapBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.QuanLyKhoHangDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -204,52 +200,6 @@ Partial Class QuanLiNCC
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "QUẢN LÍ NHÀ CUNG CẤP"
         '
-        'DataGridView1
-        '
-        Me.DataGridView1.AutoGenerateColumns = False
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.MaNhaCungCapDataGridViewTextBoxColumn, Me.MaSoNhaCungCapDataGridViewTextBoxColumn, Me.TenNhaCungCapDataGridViewTextBoxColumn, Me.SoDienThoaiDataGridViewTextBoxColumn})
-        Me.DataGridView1.DataSource = Me.NhaCungCapBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(289, 366)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 62
-        Me.DataGridView1.RowTemplate.Height = 28
-        Me.DataGridView1.Size = New System.Drawing.Size(873, 285)
-        Me.DataGridView1.TabIndex = 3
-        '
-        'MaNhaCungCapDataGridViewTextBoxColumn
-        '
-        Me.MaNhaCungCapDataGridViewTextBoxColumn.DataPropertyName = "MaNhaCungCap"
-        Me.MaNhaCungCapDataGridViewTextBoxColumn.HeaderText = "MaNhaCungCap"
-        Me.MaNhaCungCapDataGridViewTextBoxColumn.MinimumWidth = 8
-        Me.MaNhaCungCapDataGridViewTextBoxColumn.Name = "MaNhaCungCapDataGridViewTextBoxColumn"
-        Me.MaNhaCungCapDataGridViewTextBoxColumn.ReadOnly = True
-        Me.MaNhaCungCapDataGridViewTextBoxColumn.Width = 150
-        '
-        'MaSoNhaCungCapDataGridViewTextBoxColumn
-        '
-        Me.MaSoNhaCungCapDataGridViewTextBoxColumn.DataPropertyName = "MaSoNhaCungCap"
-        Me.MaSoNhaCungCapDataGridViewTextBoxColumn.HeaderText = "MaSoNhaCungCap"
-        Me.MaSoNhaCungCapDataGridViewTextBoxColumn.MinimumWidth = 8
-        Me.MaSoNhaCungCapDataGridViewTextBoxColumn.Name = "MaSoNhaCungCapDataGridViewTextBoxColumn"
-        Me.MaSoNhaCungCapDataGridViewTextBoxColumn.Width = 150
-        '
-        'TenNhaCungCapDataGridViewTextBoxColumn
-        '
-        Me.TenNhaCungCapDataGridViewTextBoxColumn.DataPropertyName = "TenNhaCungCap"
-        Me.TenNhaCungCapDataGridViewTextBoxColumn.HeaderText = "TenNhaCungCap"
-        Me.TenNhaCungCapDataGridViewTextBoxColumn.MinimumWidth = 8
-        Me.TenNhaCungCapDataGridViewTextBoxColumn.Name = "TenNhaCungCapDataGridViewTextBoxColumn"
-        Me.TenNhaCungCapDataGridViewTextBoxColumn.Width = 150
-        '
-        'SoDienThoaiDataGridViewTextBoxColumn
-        '
-        Me.SoDienThoaiDataGridViewTextBoxColumn.DataPropertyName = "SoDienThoai"
-        Me.SoDienThoaiDataGridViewTextBoxColumn.HeaderText = "SoDienThoai"
-        Me.SoDienThoaiDataGridViewTextBoxColumn.MinimumWidth = 8
-        Me.SoDienThoaiDataGridViewTextBoxColumn.Name = "SoDienThoaiDataGridViewTextBoxColumn"
-        Me.SoDienThoaiDataGridViewTextBoxColumn.Width = 150
-        '
         'NhaCungCapBindingSource
         '
         Me.NhaCungCapBindingSource.DataMember = "NhaCungCap"
@@ -263,6 +213,16 @@ Partial Class QuanLiNCC
         'NhaCungCapTableAdapter
         '
         Me.NhaCungCapTableAdapter.ClearBeforeFill = True
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(282, 345)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowHeadersWidth = 62
+        Me.DataGridView1.RowTemplate.Height = 28
+        Me.DataGridView1.Size = New System.Drawing.Size(881, 339)
+        Me.DataGridView1.TabIndex = 3
         '
         'QuanLiNCC
         '
@@ -279,9 +239,9 @@ Partial Class QuanLiNCC
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NhaCungCapBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.QuanLyKhoHangDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -295,14 +255,9 @@ Partial Class QuanLiNCC
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents QuanLyKhoHangDataSet2 As QuanLyKhoHangDataSet2
     Friend WithEvents NhaCungCapBindingSource As BindingSource
     Friend WithEvents NhaCungCapTableAdapter As QuanLyKhoHangDataSet2TableAdapters.NhaCungCapTableAdapter
-    Friend WithEvents MaNhaCungCapDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents MaSoNhaCungCapDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents TenNhaCungCapDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents SoDienThoaiDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents btn_Sua As Button
     Friend WithEvents btn_Xoa As Button
     Friend WithEvents btn_Them As Button
@@ -311,4 +266,5 @@ Partial Class QuanLiNCC
     Friend WithEvents txt_MaSoNCC As TextBox
     Friend WithEvents txt_MaNCC As TextBox
     Friend WithEvents btn_LamMoi As Button
+    Friend WithEvents DataGridView1 As DataGridView
 End Class

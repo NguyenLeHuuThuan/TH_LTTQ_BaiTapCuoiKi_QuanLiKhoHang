@@ -44,12 +44,6 @@ Partial Class QuanLiSanPham
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.MaSanPhamDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MaSoSanPhamDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TenSanPhamDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MoTaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DonViDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SoLuongTonDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.SanPhamBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.QuanLyKhoHangDataSet1BindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.QuanLyKhoHangDataSet1 = New QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1()
@@ -251,65 +245,13 @@ Partial Class QuanLiSanPham
         '
         'DataGridView1
         '
-        Me.DataGridView1.AutoGenerateColumns = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.MaSanPhamDataGridViewTextBoxColumn, Me.MaSoSanPhamDataGridViewTextBoxColumn, Me.TenSanPhamDataGridViewTextBoxColumn, Me.MoTaDataGridViewTextBoxColumn, Me.DonViDataGridViewTextBoxColumn, Me.SoLuongTonDataGridViewTextBoxColumn})
-        Me.DataGridView1.DataSource = Me.SanPhamBindingSource
         Me.DataGridView1.Location = New System.Drawing.Point(244, 293)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 62
         Me.DataGridView1.RowTemplate.Height = 28
         Me.DataGridView1.Size = New System.Drawing.Size(838, 321)
         Me.DataGridView1.TabIndex = 2
-        '
-        'MaSanPhamDataGridViewTextBoxColumn
-        '
-        Me.MaSanPhamDataGridViewTextBoxColumn.DataPropertyName = "MaSanPham"
-        Me.MaSanPhamDataGridViewTextBoxColumn.HeaderText = "MaSanPham"
-        Me.MaSanPhamDataGridViewTextBoxColumn.MinimumWidth = 8
-        Me.MaSanPhamDataGridViewTextBoxColumn.Name = "MaSanPhamDataGridViewTextBoxColumn"
-        Me.MaSanPhamDataGridViewTextBoxColumn.ReadOnly = True
-        Me.MaSanPhamDataGridViewTextBoxColumn.Width = 150
-        '
-        'MaSoSanPhamDataGridViewTextBoxColumn
-        '
-        Me.MaSoSanPhamDataGridViewTextBoxColumn.DataPropertyName = "MaSoSanPham"
-        Me.MaSoSanPhamDataGridViewTextBoxColumn.HeaderText = "MaSoSanPham"
-        Me.MaSoSanPhamDataGridViewTextBoxColumn.MinimumWidth = 8
-        Me.MaSoSanPhamDataGridViewTextBoxColumn.Name = "MaSoSanPhamDataGridViewTextBoxColumn"
-        Me.MaSoSanPhamDataGridViewTextBoxColumn.Width = 150
-        '
-        'TenSanPhamDataGridViewTextBoxColumn
-        '
-        Me.TenSanPhamDataGridViewTextBoxColumn.DataPropertyName = "TenSanPham"
-        Me.TenSanPhamDataGridViewTextBoxColumn.HeaderText = "TenSanPham"
-        Me.TenSanPhamDataGridViewTextBoxColumn.MinimumWidth = 8
-        Me.TenSanPhamDataGridViewTextBoxColumn.Name = "TenSanPhamDataGridViewTextBoxColumn"
-        Me.TenSanPhamDataGridViewTextBoxColumn.Width = 150
-        '
-        'MoTaDataGridViewTextBoxColumn
-        '
-        Me.MoTaDataGridViewTextBoxColumn.DataPropertyName = "MoTa"
-        Me.MoTaDataGridViewTextBoxColumn.HeaderText = "MoTa"
-        Me.MoTaDataGridViewTextBoxColumn.MinimumWidth = 8
-        Me.MoTaDataGridViewTextBoxColumn.Name = "MoTaDataGridViewTextBoxColumn"
-        Me.MoTaDataGridViewTextBoxColumn.Width = 150
-        '
-        'DonViDataGridViewTextBoxColumn
-        '
-        Me.DonViDataGridViewTextBoxColumn.DataPropertyName = "DonVi"
-        Me.DonViDataGridViewTextBoxColumn.HeaderText = "DonVi"
-        Me.DonViDataGridViewTextBoxColumn.MinimumWidth = 8
-        Me.DonViDataGridViewTextBoxColumn.Name = "DonViDataGridViewTextBoxColumn"
-        Me.DonViDataGridViewTextBoxColumn.Width = 150
-        '
-        'SoLuongTonDataGridViewTextBoxColumn
-        '
-        Me.SoLuongTonDataGridViewTextBoxColumn.DataPropertyName = "SoLuongTon"
-        Me.SoLuongTonDataGridViewTextBoxColumn.HeaderText = "SoLuongTon"
-        Me.SoLuongTonDataGridViewTextBoxColumn.MinimumWidth = 8
-        Me.SoLuongTonDataGridViewTextBoxColumn.Name = "SoLuongTonDataGridViewTextBoxColumn"
-        Me.SoLuongTonDataGridViewTextBoxColumn.Width = 150
         '
         'SanPhamBindingSource
         '
@@ -339,7 +281,7 @@ Partial Class QuanLiSanPham
         '
         'QuanLyKhoHangDataSetBindingSource
         '
-        Me.QuanLyKhoHangDataSetBindingSource.DataSource = GetType(QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet)
+        Me.QuanLyKhoHangDataSetBindingSource.DataSource = GetType(QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1)
         Me.QuanLyKhoHangDataSetBindingSource.Position = 0
         '
         'SanPhamTableAdapter
@@ -397,11 +339,5 @@ Partial Class QuanLiSanPham
     Friend WithEvents QuanLyKhoHangDataSet1 As QuanLyKhoHangDataSet1
     Friend WithEvents SanPhamBindingSource As BindingSource
     Friend WithEvents SanPhamTableAdapter As QuanLyKhoHangDataSet1TableAdapters.SanPhamTableAdapter
-    Friend WithEvents MaSanPhamDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents MaSoSanPhamDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents TenSanPhamDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents MoTaDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents DonViDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents SoLuongTonDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents btn_LamMoi As Button
 End Class

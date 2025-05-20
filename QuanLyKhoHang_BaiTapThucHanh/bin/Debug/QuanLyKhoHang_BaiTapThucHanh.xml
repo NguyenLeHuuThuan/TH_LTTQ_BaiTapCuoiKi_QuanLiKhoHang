@@ -137,11 +137,6 @@ Represents strongly named DataRow class.
 Row event argument class
 </summary>
 </member>
-<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet">
-<summary>
-Represents a strongly typed in-memory cache of data.
-</summary>
-</member>
 <member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet1">
 <summary>
 Represents a strongly typed in-memory cache of data.
@@ -458,71 +453,6 @@ Update Order Option
 </summary>
 </member>
 <member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet4TableAdapters.TableAdapterManager.SelfReferenceComparer">
-<summary>
-Used to sort self-referenced table's rows
-</summary>
-</member>
-<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5">
-<summary>
-Represents a strongly typed in-memory cache of data.
-</summary>
-</member>
-<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5.pro_PhieuNhapDataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5.pro_PhieuNhapRow">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5.pro_PhieuNhapRowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
-<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5TableAdapters.pro_PhieuNhapTableAdapter">
-<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member>
-<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5TableAdapters.TableAdapterManager">
-<summary>
-TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
-</summary>
-</member>
-<member name="M:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5TableAdapters.TableAdapterManager.UpdateUpdatedRows(QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
-<summary>
-Update rows in top-down order.
-</summary>
-</member>
-<member name="M:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5TableAdapters.TableAdapterManager.UpdateInsertedRows(QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5,System.Collections.Generic.List{System.Data.DataRow})">
-<summary>
-Insert rows in top-down order.
-</summary>
-</member>
-<member name="M:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5TableAdapters.TableAdapterManager.UpdateDeletedRows(QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5,System.Collections.Generic.List{System.Data.DataRow})">
-<summary>
-Delete rows in bottom-up order.
-</summary>
-</member>
-<member name="M:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
-<summary>
-Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
-</summary>
-</member>
-<member name="M:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5TableAdapters.TableAdapterManager.UpdateAll(QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5)">
-<summary>
-Update all changes to the dataset.
-</summary>
-</member>
-<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5TableAdapters.TableAdapterManager.UpdateOrderOption">
-<summary>
-Update Order Option
-</summary>
-</member>
-<member name="T:QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet5TableAdapters.TableAdapterManager.SelfReferenceComparer">
 <summary>
 Used to sort self-referenced table's rows
 </summary>

@@ -190,11 +190,6 @@
     <Compile Include="FORM\PhieuNhap.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuanLyKhoHangDataSet.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QuanLyKhoHangDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="QuanLyKhoHangDataSet1.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -214,11 +209,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyKhoHangDataSet4.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="QuanLyKhoHangDataSet5.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QuanLyKhoHangDataSet5.xsd</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -304,17 +294,6 @@
     </None>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="QuanLyKhoHangDataSet.xsc">
-      <DependentUpon>QuanLyKhoHangDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="QuanLyKhoHangDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>QuanLyKhoHangDataSet.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="QuanLyKhoHangDataSet.xss">
-      <DependentUpon>QuanLyKhoHangDataSet.xsd</DependentUpon>
-    </None>
     <None Include="QuanLyKhoHangDataSet1.xsc">
       <DependentUpon>QuanLyKhoHangDataSet1.xsd</DependentUpon>
     </None>
@@ -358,17 +337,6 @@
     </None>
     <None Include="QuanLyKhoHangDataSet4.xss">
       <DependentUpon>QuanLyKhoHangDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="QuanLyKhoHangDataSet5.xsc">
-      <DependentUpon>QuanLyKhoHangDataSet5.xsd</DependentUpon>
-    </None>
-    <None Include="QuanLyKhoHangDataSet5.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>QuanLyKhoHangDataSet5.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="QuanLyKhoHangDataSet5.xss">
-      <DependentUpon>QuanLyKhoHangDataSet5.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

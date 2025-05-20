@@ -1,12 +1,58 @@
 ﻿Imports System.Data.SqlClient
 Public Class QuanLiSanPham
-    Dim ketNoiSQL As String = Database.connectionString
+
     Dim currentRowIndex As Integer = -1
     Private Sub QuanLiSanPham_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'QuanLyKhoHangDataSet1.SanPham' table. You can move, or remove it, as needed.
-        Me.SanPhamTableAdapter.Fill(Me.QuanLyKhoHangDataSet1.SanPham)
-
+        'Me.SanPhamTableAdapter.Fill(Me.QuanLyKhoHangDataSet1.SanPham)
+        LoadData()
     End Sub
+    Private Sub LoadData()
+
+
+        ' Câu truy vấn lấy dữ liệu từ bảng SanPham
+        Dim query As String = "SELECT MaSanPham, MaSoSanPham, TenSanPham, MoTa, DonVi, SoLuongTon FROM SanPham"
+
+        ' Khởi tạo kết nối và thực hiện truy vấn
+        Using conn As New SqlConnection(connectionString)
+            Try
+                conn.Open()
+                Dim cmd As New SqlCommand(query, conn)
+                Dim reader As SqlDataReader = cmd.ExecuteReader()
+
+                ' Xóa cột & dòng hiện tại nếu có
+                DataGridView1.Columns.Clear()
+                DataGridView1.Rows.Clear()
+                DataGridView1.AutoGenerateColumns = False
+
+                ' Tạo cột thủ công
+                DataGridView1.Columns.Add("MaSanPham", "Mã Sản Phẩm")
+                DataGridView1.Columns.Add("MaSoSanPham", "Mã Số Sản Phẩm")
+                DataGridView1.Columns.Add("TenSanPham", "Tên Sản Phẩm")
+                DataGridView1.Columns.Add("MoTa", "Mô Tả")
+                DataGridView1.Columns.Add("DonVi", "Đơn Vị")
+                DataGridView1.Columns.Add("SoLuongTon", "Số Lượng Tồn")
+
+                ' Duyệt dữ liệu và thêm vào DataGridView
+                While reader.Read()
+                    DataGridView1.Rows.Add(
+                    reader("MaSanPham"),
+                    reader("MaSoSanPham"),
+                    reader("TenSanPham"),
+                    reader("MoTa"),
+                    reader("DonVi"),
+                    reader("SoLuongTon")
+                )
+                End While
+
+                reader.Close()
+            Catch ex As Exception
+                MessageBox.Show("Lỗi khi tải dữ liệu: " & ex.Message)
+            End Try
+        End Using
+    End Sub
+
+
     Private Sub clearText()
         txt_DonVi.Text = ""
         txt_MaSanPham.Text = ""
@@ -58,8 +104,8 @@ Public Class QuanLiSanPham
 
             MessageBox.Show("Lưu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information)
             ' Cập nhật lại DataGridView
-            Me.SanPhamTableAdapter.Fill(Me.QuanLyKhoHangDataSet1.SanPham)
-
+            'Me.SanPhamTableAdapter.Fill(Me.QuanLyKhoHangDataSet1.SanPham)
+            LoadData()
             clearText()
 
         Catch ex As Exception
@@ -86,10 +132,10 @@ Public Class QuanLiSanPham
 
             MessageBox.Show("Xoá thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information)
             ' Cập nhật lại DataGridView
-            Me.SanPhamTableAdapter.Fill(Me.QuanLyKhoHangDataSet1.SanPham)
+            'Me.SanPhamTableAdapter.Fill(Me.QuanLyKhoHangDataSet1.SanPham)
 
             clearText()
-
+            LoadData()
         Catch ex As Exception
             MessageBox.Show("Lỗi khi Xoá: " & ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
@@ -128,49 +174,76 @@ Public Class QuanLiSanPham
             End Using
             MessageBox.Show("update thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information)
             ' Cập nhật lại DataGridView
-            Me.SanPhamTableAdapter.Fill(Me.QuanLyKhoHangDataSet1.SanPham)
+            'Me.SanPhamTableAdapter.Fill(Me.QuanLyKhoHangDataSet1.SanPham)
             clearText()
-
+            LoadData()
         Catch ex As Exception
             MessageBox.Show("Lỗi khi update: " & ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
-    Private Function GetSanPhamHetHang() As DataTable
-        Dim dt As New DataTable()
-        Try
-            Using con As New SqlConnection(connectionString)
-                Dim query As String = "SELECT * FROM SanPham WHERE SoLuongTon = 0"
-                Using cmd As New SqlCommand(query, con)
-                    con.Open()
-                    Dim adapter As New SqlDataAdapter(cmd)
-                    adapter.Fill(dt)
-                End Using
-            End Using
-        Catch ex As Exception
-            MessageBox.Show("Lỗi khi lấy sản phẩm hết hàng: " & ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End Try
-        Return dt
-    End Function
+    Private Sub GetSanPhamHetHang()
+
+        ' Câu truy vấn lấy dữ liệu từ bảng SanPham
+        Dim query As String = "SELECT MaSanPham, MaSoSanPham, TenSanPham, MoTa, DonVi, SoLuongTon FROM SanPham where SoLuongTon = 0"
+
+        ' Khởi tạo kết nối và thực hiện truy vấn
+        Using conn As New SqlConnection(connectionString)
+            Try
+                conn.Open()
+                Dim cmd As New SqlCommand(query, conn)
+                Dim reader As SqlDataReader = cmd.ExecuteReader()
+
+                ' Xóa cột & dòng hiện tại nếu có
+                DataGridView1.Columns.Clear()
+                DataGridView1.Rows.Clear()
+                DataGridView1.AutoGenerateColumns = False
+
+                ' Tạo cột thủ công
+                DataGridView1.Columns.Add("MaSanPham", "Mã Sản Phẩm")
+                DataGridView1.Columns.Add("MaSoSanPham", "Mã Số Sản Phẩm")
+                DataGridView1.Columns.Add("TenSanPham", "Tên Sản Phẩm")
+                DataGridView1.Columns.Add("MoTa", "Mô Tả")
+                DataGridView1.Columns.Add("DonVi", "Đơn Vị")
+                DataGridView1.Columns.Add("SoLuongTon", "Số Lượng Tồn")
+
+                ' Duyệt dữ liệu và thêm vào DataGridView
+                While reader.Read()
+                    DataGridView1.Rows.Add(
+                    reader("MaSanPham"),
+                    reader("MaSoSanPham"),
+                    reader("TenSanPham"),
+                    reader("MoTa"),
+                    reader("DonVi"),
+                    reader("SoLuongTon")
+                )
+                End While
+
+                reader.Close()
+            Catch ex As Exception
+                MessageBox.Show("Lỗi khi tải dữ liệu: " & ex.Message)
+            End Try
+        End Using
+    End Sub
+
 
     Private Sub btn_ThongKe_Click(sender As Object, e As EventArgs) Handles btn_ThongKe.Click
         ' Lấy dữ liệu sản phẩm hết hàng
-        Dim dtHetHang As DataTable = GetSanPhamHetHang()
-
-        ' Gán DataTable làm nguồn dữ liệu cho DataGridView
-        DataGridView1.DataSource = dtHetHang
+        GetSanPhamHetHang()
     End Sub
 
     Private Sub btn_LamMoi_Click(sender As Object, e As EventArgs) Handles btn_LamMoi.Click
         clearText()
         Try
             ' Tải lại dữ liệu vào DataSet
-            Me.SanPhamTableAdapter.Fill(Me.QuanLyKhoHangDataSet1.SanPham)
+            'Me.SanPhamTableAdapter.Fill(Me.QuanLyKhoHangDataSet1.SanPham)
+            LoadData()
 
-            ' Gán lại nguồn dữ liệu cho DataGridView1 là bảng SanPham trong DataSet
-            DataGridView1.DataSource = Me.QuanLyKhoHangDataSet1.SanPham
+
 
         Catch ex As Exception
             MessageBox.Show("Lỗi khi làm mới dữ liệu: " & ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
     End Sub
+
+
 End Class

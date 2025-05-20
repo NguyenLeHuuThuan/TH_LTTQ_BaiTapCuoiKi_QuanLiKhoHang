@@ -41,7 +41,6 @@ Partial Class PhieuNhap
         Me.txt_NgayGiaoDich = New System.Windows.Forms.TextBox()
         Me.txt_GhiChu = New System.Windows.Forms.TextBox()
         Me.txt_SoLuong = New System.Windows.Forms.TextBox()
-        Me.txt_MaSanPham = New System.Windows.Forms.TextBox()
         Me.txt_MaGiaoDich = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -50,13 +49,7 @@ Partial Class PhieuNhap
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.MaGiaoDichDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MaSanPhamDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.LoaiGiaoDichDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.SoLuongDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NgayGiaoDichDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.MaNhaCungCapDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GhiChuDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.cb_Ma_TenSP = New System.Windows.Forms.ComboBox()
         CType(Me.ProPhieuNhapBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.QuanLyKhoHangDataSet3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -167,11 +160,11 @@ Partial Class PhieuNhap
         'Panel2
         '
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel2.Controls.Add(Me.cb_Ma_TenSP)
         Me.Panel2.Controls.Add(Me.cb_MaNCC)
         Me.Panel2.Controls.Add(Me.txt_NgayGiaoDich)
         Me.Panel2.Controls.Add(Me.txt_GhiChu)
         Me.Panel2.Controls.Add(Me.txt_SoLuong)
-        Me.Panel2.Controls.Add(Me.txt_MaSanPham)
         Me.Panel2.Controls.Add(Me.txt_MaGiaoDich)
         Me.Panel2.Controls.Add(Me.Label8)
         Me.Panel2.Controls.Add(Me.Label7)
@@ -212,13 +205,6 @@ Partial Class PhieuNhap
         Me.txt_SoLuong.Name = "txt_SoLuong"
         Me.txt_SoLuong.Size = New System.Drawing.Size(139, 26)
         Me.txt_SoLuong.TabIndex = 6
-        '
-        'txt_MaSanPham
-        '
-        Me.txt_MaSanPham.Location = New System.Drawing.Point(184, 107)
-        Me.txt_MaSanPham.Name = "txt_MaSanPham"
-        Me.txt_MaSanPham.Size = New System.Drawing.Size(139, 26)
-        Me.txt_MaSanPham.TabIndex = 6
         '
         'txt_MaGiaoDich
         '
@@ -284,73 +270,21 @@ Partial Class PhieuNhap
         '
         'DataGridView1
         '
-        Me.DataGridView1.AutoGenerateColumns = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.MaGiaoDichDataGridViewTextBoxColumn, Me.MaSanPhamDataGridViewTextBoxColumn, Me.LoaiGiaoDichDataGridViewTextBoxColumn, Me.SoLuongDataGridViewTextBoxColumn, Me.NgayGiaoDichDataGridViewTextBoxColumn, Me.MaNhaCungCapDataGridViewTextBoxColumn, Me.GhiChuDataGridViewTextBoxColumn})
-        Me.DataGridView1.DataSource = Me.ProPhieuNhapBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(252, 322)
+        Me.DataGridView1.Location = New System.Drawing.Point(249, 323)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 62
         Me.DataGridView1.RowTemplate.Height = 28
-        Me.DataGridView1.Size = New System.Drawing.Size(868, 391)
+        Me.DataGridView1.Size = New System.Drawing.Size(882, 391)
         Me.DataGridView1.TabIndex = 13
         '
-        'MaGiaoDichDataGridViewTextBoxColumn
+        'cb_Ma_TenSP
         '
-        Me.MaGiaoDichDataGridViewTextBoxColumn.DataPropertyName = "MaGiaoDich"
-        Me.MaGiaoDichDataGridViewTextBoxColumn.HeaderText = "MaGiaoDich"
-        Me.MaGiaoDichDataGridViewTextBoxColumn.MinimumWidth = 8
-        Me.MaGiaoDichDataGridViewTextBoxColumn.Name = "MaGiaoDichDataGridViewTextBoxColumn"
-        Me.MaGiaoDichDataGridViewTextBoxColumn.ReadOnly = True
-        Me.MaGiaoDichDataGridViewTextBoxColumn.Width = 150
-        '
-        'MaSanPhamDataGridViewTextBoxColumn
-        '
-        Me.MaSanPhamDataGridViewTextBoxColumn.DataPropertyName = "MaSanPham"
-        Me.MaSanPhamDataGridViewTextBoxColumn.HeaderText = "MaSanPham"
-        Me.MaSanPhamDataGridViewTextBoxColumn.MinimumWidth = 8
-        Me.MaSanPhamDataGridViewTextBoxColumn.Name = "MaSanPhamDataGridViewTextBoxColumn"
-        Me.MaSanPhamDataGridViewTextBoxColumn.Width = 150
-        '
-        'LoaiGiaoDichDataGridViewTextBoxColumn
-        '
-        Me.LoaiGiaoDichDataGridViewTextBoxColumn.DataPropertyName = "LoaiGiaoDich"
-        Me.LoaiGiaoDichDataGridViewTextBoxColumn.HeaderText = "LoaiGiaoDich"
-        Me.LoaiGiaoDichDataGridViewTextBoxColumn.MinimumWidth = 8
-        Me.LoaiGiaoDichDataGridViewTextBoxColumn.Name = "LoaiGiaoDichDataGridViewTextBoxColumn"
-        Me.LoaiGiaoDichDataGridViewTextBoxColumn.Width = 150
-        '
-        'SoLuongDataGridViewTextBoxColumn
-        '
-        Me.SoLuongDataGridViewTextBoxColumn.DataPropertyName = "SoLuong"
-        Me.SoLuongDataGridViewTextBoxColumn.HeaderText = "SoLuong"
-        Me.SoLuongDataGridViewTextBoxColumn.MinimumWidth = 8
-        Me.SoLuongDataGridViewTextBoxColumn.Name = "SoLuongDataGridViewTextBoxColumn"
-        Me.SoLuongDataGridViewTextBoxColumn.Width = 150
-        '
-        'NgayGiaoDichDataGridViewTextBoxColumn
-        '
-        Me.NgayGiaoDichDataGridViewTextBoxColumn.DataPropertyName = "NgayGiaoDich"
-        Me.NgayGiaoDichDataGridViewTextBoxColumn.HeaderText = "NgayGiaoDich"
-        Me.NgayGiaoDichDataGridViewTextBoxColumn.MinimumWidth = 8
-        Me.NgayGiaoDichDataGridViewTextBoxColumn.Name = "NgayGiaoDichDataGridViewTextBoxColumn"
-        Me.NgayGiaoDichDataGridViewTextBoxColumn.Width = 150
-        '
-        'MaNhaCungCapDataGridViewTextBoxColumn
-        '
-        Me.MaNhaCungCapDataGridViewTextBoxColumn.DataPropertyName = "MaNhaCungCap"
-        Me.MaNhaCungCapDataGridViewTextBoxColumn.HeaderText = "MaNhaCungCap"
-        Me.MaNhaCungCapDataGridViewTextBoxColumn.MinimumWidth = 8
-        Me.MaNhaCungCapDataGridViewTextBoxColumn.Name = "MaNhaCungCapDataGridViewTextBoxColumn"
-        Me.MaNhaCungCapDataGridViewTextBoxColumn.Width = 150
-        '
-        'GhiChuDataGridViewTextBoxColumn
-        '
-        Me.GhiChuDataGridViewTextBoxColumn.DataPropertyName = "GhiChu"
-        Me.GhiChuDataGridViewTextBoxColumn.HeaderText = "GhiChu"
-        Me.GhiChuDataGridViewTextBoxColumn.MinimumWidth = 8
-        Me.GhiChuDataGridViewTextBoxColumn.Name = "GhiChuDataGridViewTextBoxColumn"
-        Me.GhiChuDataGridViewTextBoxColumn.Width = 150
+        Me.cb_Ma_TenSP.FormattingEnabled = True
+        Me.cb_Ma_TenSP.Location = New System.Drawing.Point(184, 113)
+        Me.cb_Ma_TenSP.Name = "cb_Ma_TenSP"
+        Me.cb_Ma_TenSP.Size = New System.Drawing.Size(139, 28)
+        Me.cb_Ma_TenSP.TabIndex = 8
         '
         'PhieuNhap
         '
@@ -395,7 +329,6 @@ Partial Class PhieuNhap
     Friend WithEvents txt_NgayGiaoDich As TextBox
     Friend WithEvents txt_GhiChu As TextBox
     Friend WithEvents txt_SoLuong As TextBox
-    Friend WithEvents txt_MaSanPham As TextBox
     Friend WithEvents txt_MaGiaoDich As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
@@ -403,12 +336,6 @@ Partial Class PhieuNhap
     Friend WithEvents Label5 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents cb_Ma_TenSP As ComboBox
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents MaGiaoDichDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents MaSanPhamDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents LoaiGiaoDichDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents SoLuongDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents NgayGiaoDichDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents MaNhaCungCapDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
-    Friend WithEvents GhiChuDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
 End Class
