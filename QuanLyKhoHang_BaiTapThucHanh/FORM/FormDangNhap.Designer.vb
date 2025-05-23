@@ -92,7 +92,7 @@ Partial Class FormDangNhap
         Me.Controls.Add(Me.Label1)
         Me.Name = "FormDangNhap"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "FormDangNhap"
+        Me.Text = "Bài tập thực hành _ Nhóm 4 _ Nguyễn Phương và Nguyễn Lê Hữu Thuận"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

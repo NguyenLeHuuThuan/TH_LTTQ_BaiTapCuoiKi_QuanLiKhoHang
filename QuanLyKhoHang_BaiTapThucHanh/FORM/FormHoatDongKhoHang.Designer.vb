@@ -41,7 +41,7 @@ Partial Class FormHoatDongKhoHang
         Series1.Legend = "Legend1"
         Series1.Name = "Series1"
         Me.Chart1.Series.Add(Series1)
-        Me.Chart1.Size = New System.Drawing.Size(1016, 549)
+        Me.Chart1.Size = New System.Drawing.Size(1042, 549)
         Me.Chart1.TabIndex = 0
         Me.Chart1.Text = "Chart1"
         '
@@ -51,7 +51,7 @@ Partial Class FormHoatDongKhoHang
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.NenBieuDo
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1126, 630)
+        Me.ClientSize = New System.Drawing.Size(1141, 629)
         Me.Controls.Add(Me.Chart1)
         Me.Name = "FormHoatDongKhoHang"
         Me.Text = "FormHoatDongKhoHang"

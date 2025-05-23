@@ -35,13 +35,13 @@ Partial Class FormBieuDoTyLeNhapNCC
         Me.Chart1.ChartAreas.Add(ChartArea1)
         Legend1.Name = "Legend1"
         Me.Chart1.Legends.Add(Legend1)
-        Me.Chart1.Location = New System.Drawing.Point(30, 64)
+        Me.Chart1.Location = New System.Drawing.Point(49, 64)
         Me.Chart1.Name = "Chart1"
         Series1.ChartArea = "ChartArea1"
         Series1.Legend = "Legend1"
         Series1.Name = "Series1"
         Me.Chart1.Series.Add(Series1)
-        Me.Chart1.Size = New System.Drawing.Size(1089, 521)
+        Me.Chart1.Size = New System.Drawing.Size(1052, 502)
         Me.Chart1.TabIndex = 0
         Me.Chart1.Text = "Chart1"
         '
@@ -51,7 +51,7 @@ Partial Class FormBieuDoTyLeNhapNCC
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.NenBieuDo
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1148, 638)
+        Me.ClientSize = New System.Drawing.Size(1142, 640)
         Me.Controls.Add(Me.Chart1)
         Me.Name = "FormBieuDoTyLeNhapNCC"
         Me.Text = "FormBieuDo"

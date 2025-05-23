@@ -36,7 +36,7 @@ Partial Class FormBieuDoNhapXuatKho
         Me.Chart1.ChartAreas.Add(ChartArea1)
         Legend1.Name = "Legend1"
         Me.Chart1.Legends.Add(Legend1)
-        Me.Chart1.Location = New System.Drawing.Point(56, 58)
+        Me.Chart1.Location = New System.Drawing.Point(48, 59)
         Me.Chart1.Name = "Chart1"
         Series1.ChartArea = "ChartArea1"
         Series1.Legend = "Legend1"
@@ -66,7 +66,7 @@ Partial Class FormBieuDoNhapXuatKho
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.NenBieuDo
-        Me.ClientSize = New System.Drawing.Size(1131, 674)
+        Me.ClientSize = New System.Drawing.Size(1120, 674)
         Me.Controls.Add(Me.btnInExcel)
         Me.Controls.Add(Me.Chart1)
         Me.Name = "FormBieuDoNhapXuatKho"

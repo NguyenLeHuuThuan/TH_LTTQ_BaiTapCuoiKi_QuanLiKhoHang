@@ -117,22 +117,42 @@ QuanLyKhoHang_BaiTapThucHanh
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="T:QuanLyKhoHang_BaiTapThucHanh.DataSetNhapTonXuatSanPham">
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.DataSetSanPhamConTrongKho">
 <summary>
 Represents a strongly typed in-memory cache of data.
 </summary>
 </member>
-<member name="T:QuanLyKhoHang_BaiTapThucHanh.DataSetNhapTonXuatSanPham.DataTable1DataTable">
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.DataSetSanPhamConTrongKho.DataTable1DataTable">
 <summary>
 Represents the strongly named DataTable class.
 </summary>
 </member>
-<member name="T:QuanLyKhoHang_BaiTapThucHanh.DataSetNhapTonXuatSanPham.DataTable1Row">
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.DataSetSanPhamConTrongKho.DataTable1Row">
 <summary>
 Represents strongly named DataRow class.
 </summary>
 </member>
-<member name="T:QuanLyKhoHang_BaiTapThucHanh.DataSetNhapTonXuatSanPham.DataTable1RowChangeEvent">
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.DataSetSanPhamConTrongKho.DataTable1RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.DataSetSanPhamTheoSoLuongXuat">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.DataSetSanPhamTheoSoLuongXuat.DataTable1DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.DataSetSanPhamTheoSoLuongXuat.DataTable1Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:QuanLyKhoHang_BaiTapThucHanh.DataSetSanPhamTheoSoLuongXuat.DataTable1RowChangeEvent">
 <summary>
 Row event argument class
 </summary>

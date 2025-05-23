@@ -227,8 +227,111 @@ Public Class QuanLiSanPham
 
 
     Private Sub btn_ThongKe_Click(sender As Object, e As EventArgs) Handles btn_ThongKe.Click
-        ' Lấy dữ liệu sản phẩm hết hàng
-        GetSanPhamHetHang()
+        Dim input As String = InputBox("Chọn chức năng thống kê:" & vbCrLf &
+                                       "1 - Sản phẩm nhập nhiều nhất" & vbCrLf &
+                                       "2 - Sản phẩm xuất nhiều nhất" & vbCrLf &
+                                       "3 - Sản phẩm chưa từng nhập" & vbCrLf &
+                                       "4 - Sản phẩm chưa từng xuất", "Chọn Thống Kê", "0")
+        If String.IsNullOrWhiteSpace(input) Then
+            ' Người dùng hủy hoặc không nhập gì, ta không làm gì cả
+            Return
+        End If
+
+        Dim choice As Integer
+        If Integer.TryParse(input, choice) AndAlso choice >= 0 AndAlso choice <= 3 Then
+            Select Case choice
+                Case 1
+                    ThongKeSanPhamNhapXuat("Nhap")
+                Case 2
+                    ThongKeSanPhamNhapXuat("Xuat")
+                Case 3
+                    ThongKeSanPhamChuaCoGiaoDich("Nhap")
+                Case 4
+                    ThongKeSanPhamChuaCoGiaoDich("Xuat")
+            End Select
+        Else
+            MessageBox.Show("Vui lòng nhập số từ 0 đến 3 để chọn.", "Lỗi chọn chức năng", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End If
+    End Sub
+    ' Thống kê sản phẩm nhập hoặc xuất nhiều nhất
+    Private Sub ThongKeSanPhamNhapXuat(loai As String)
+        Dim query As String = "
+            SELECT TOP 10 sp.MaSanPham, sp.MaSoSanPham, sp.TenSanPham, sp.MoTa, sp.DonVi, SUM(lsgd.SoLuong) AS TongSoLuong
+            FROM SanPham sp
+            INNER JOIN LichSuGiaoDich lsgd ON sp.MaSanPham = lsgd.MaSanPham
+            WHERE lsgd.LoaiGiaoDich = @LoaiGiaoDich
+            GROUP BY sp.MaSanPham, sp.MaSoSanPham, sp.TenSanPham, sp.MoTa, sp.DonVi
+            ORDER BY TongSoLuong DESC
+        "
+        LoadDuLieuLenDataGrid(query, New SqlParameter("@LoaiGiaoDich", loai))
+    End Sub
+
+    ' Thống kê sản phẩm chưa từng nhập hoặc xuất
+    Private Sub ThongKeSanPhamChuaCoGiaoDich(loai As String)
+        Dim query As String = "
+            SELECT sp.MaSanPham, sp.MaSoSanPham, sp.TenSanPham, sp.MoTa, sp.DonVi, sp.SoLuongTon
+            FROM SanPham sp
+            WHERE NOT EXISTS (
+                SELECT 1 FROM LichSuGiaoDich lsgd
+                WHERE lsgd.MaSanPham = sp.MaSanPham AND lsgd.LoaiGiaoDich = @LoaiGiaoDich
+            )
+        "
+        LoadDuLieuLenDataGrid(query, New SqlParameter("@LoaiGiaoDich", loai))
+    End Sub
+
+    ' Hàm load dữ liệu lên DataGridView1
+    Private Sub LoadDuLieuLenDataGrid(query As String, ParamArray parameters() As SqlParameter)
+        Using conn As New SqlConnection(connectionString)
+            Try
+                conn.Open()
+                Using cmd As New SqlCommand(query, conn)
+                    If parameters IsNot Nothing Then
+                        cmd.Parameters.AddRange(parameters)
+                    End If
+
+                    Using reader As SqlDataReader = cmd.ExecuteReader()
+                        DataGridView1.Columns.Clear()
+                        DataGridView1.Rows.Clear()
+                        DataGridView1.AutoGenerateColumns = False
+
+                        ' Thêm cột mặc định
+                        DataGridView1.Columns.Add("MaSanPham", "Mã Sản Phẩm")
+                        DataGridView1.Columns.Add("MaSoSanPham", "Mã Số Sản Phẩm")
+                        DataGridView1.Columns.Add("TenSanPham", "Tên Sản Phẩm")
+                        DataGridView1.Columns.Add("MoTa", "Mô Tả")
+                        DataGridView1.Columns.Add("DonVi", "Đơn Vị")
+
+                        ' Kiểm tra có cột SoLuongTon hoặc TongSoLuong trong kết quả
+                        Dim hasSoLuongTon As Boolean = False
+                        Dim hasTongSoLuong As Boolean = False
+
+                        For i As Integer = 0 To reader.FieldCount - 1
+                            Dim colName = reader.GetName(i).ToLower()
+                            If colName = "soluongton" Then hasSoLuongTon = True
+                            If colName = "tongsoluong" Then hasTongSoLuong = True
+                        Next
+
+                        If hasSoLuongTon Then DataGridView1.Columns.Add("SoLuongTon", "Số Lượng Tồn")
+                        If hasTongSoLuong Then DataGridView1.Columns.Add("TongSoLuong", "Tổng Số Lượng")
+
+                        While reader.Read()
+                            Dim rowData As New List(Of Object)
+                            rowData.Add(reader("MaSanPham"))
+                            rowData.Add(reader("MaSoSanPham"))
+                            rowData.Add(reader("TenSanPham"))
+                            rowData.Add(reader("MoTa"))
+                            rowData.Add(reader("DonVi"))
+                            If hasSoLuongTon Then rowData.Add(reader("SoLuongTon"))
+                            If hasTongSoLuong Then rowData.Add(reader("TongSoLuong"))
+
+                            DataGridView1.Rows.Add(rowData.ToArray())
+                        End While
+                    End Using
+                End Using
+            Catch ex As Exception
+                MessageBox.Show("Lỗi khi tải dữ liệu: " & ex.Message)
+            End Try
+        End Using
     End Sub
 
     Private Sub btn_LamMoi_Click(sender As Object, e As EventArgs) Handles btn_LamMoi.Click
@@ -245,5 +348,54 @@ Public Class QuanLiSanPham
         End Try
     End Sub
 
+    Private Sub btnTimKiem_Click(sender As Object, e As EventArgs) Handles btnTimKiem.Click
+        Dim keyword As String = InputBox("Nhập tên sản phẩm cần tìm kiếm:", "Tìm Kiếm Sản Phẩm")
+
+        ' Nếu người dùng bấm Cancel hoặc để trống thì không tìm kiếm
+        If String.IsNullOrWhiteSpace(keyword) Then
+            Return
+        End If
+
+        Dim query As String = "
+        SELECT MaSanPham, MaSoSanPham, TenSanPham, MoTa, DonVi, SoLuongTon
+        FROM SanPham
+        WHERE TenSanPham LIKE '%' + @Keyword + '%'
+    "
+
+        Using conn As New SqlConnection(connectionString)
+            Try
+                conn.Open()
+                Using cmd As New SqlCommand(query, conn)
+                    cmd.Parameters.AddWithValue("@Keyword", keyword)
+
+                    Using reader As SqlDataReader = cmd.ExecuteReader()
+                        DataGridView1.Columns.Clear()
+                        DataGridView1.Rows.Clear()
+                        DataGridView1.AutoGenerateColumns = False
+
+                        DataGridView1.Columns.Add("MaSanPham", "Mã Sản Phẩm")
+                        DataGridView1.Columns.Add("MaSoSanPham", "Mã Số Sản Phẩm")
+                        DataGridView1.Columns.Add("TenSanPham", "Tên Sản Phẩm")
+                        DataGridView1.Columns.Add("MoTa", "Mô Tả")
+                        DataGridView1.Columns.Add("DonVi", "Đơn Vị")
+                        DataGridView1.Columns.Add("SoLuongTon", "Số Lượng Tồn")
+
+                        While reader.Read()
+                            DataGridView1.Rows.Add(
+                                reader("MaSanPham"),
+                                reader("MaSoSanPham"),
+                                reader("TenSanPham"),
+                                reader("MoTa"),
+                                reader("DonVi"),
+                                reader("SoLuongTon")
+                            )
+                        End While
+                    End Using
+                End Using
+            Catch ex As Exception
+                MessageBox.Show("Lỗi khi tìm kiếm: " & ex.Message)
+            End Try
+        End Using
+    End Sub
 
 End Class

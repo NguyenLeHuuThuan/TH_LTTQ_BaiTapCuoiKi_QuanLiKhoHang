@@ -96,18 +96,17 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dataset\DataSetNhapTonXuatSanPham.Designer.vb">
+    <Compile Include="Dataset\DataSetSanPhamConTrongKho.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DataSetNhapTonXuatSanPham.xsd</DependentUpon>
+      <DependentUpon>DataSetSanPhamConTrongKho.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\DataSetSanPhamTheoSoLuongXuat.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetSanPhamTheoSoLuongXuat.xsd</DependentUpon>
     </Compile>
     <Compile Include="FORM\Database.vb" />
-    <Compile Include="FORM\FormBaoCaoThongKe.Designer.vb">
-      <DependentUpon>FormBaoCaoThongKe.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FORM\FormBaoCaoThongKe.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="FORM\FormBieuDo.Designer.vb">
       <DependentUpon>FormBieuDo.vb</DependentUpon>
     </Compile>
@@ -136,12 +135,6 @@
       <DependentUpon>FormLoad.vb</DependentUpon>
     </Compile>
     <Compile Include="FORM\FormLoad.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FORM\FormTongHopNhapXuatTon.Designer.vb">
-      <DependentUpon>FormTongHopNhapXuatTon.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FORM\FormTongHopNhapXuatTon.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FORM\FormTrangChu.Designer.vb">
@@ -212,9 +205,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FORM\FormBaoCaoThongKe.resx">
-      <DependentUpon>FormBaoCaoThongKe.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FORM\FormBieuDo.resx">
       <DependentUpon>FormBieuDo.vb</DependentUpon>
     </EmbeddedResource>
@@ -229,9 +219,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FORM\FormLoad.resx">
       <DependentUpon>FormLoad.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FORM\FormTongHopNhapXuatTon.resx">
-      <DependentUpon>FormTongHopNhapXuatTon.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FORM\FormTrangChu.resx">
       <DependentUpon>FormTrangChu.vb</DependentUpon>
@@ -254,19 +241,38 @@
     <EmbeddedResource Include="FORM\PhieuNhap.resx">
       <DependentUpon>PhieuNhap.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report\Report_TongHopNhapXuatTon.rdlc" />
+    <EmbeddedResource Include="Report\Report_SanPhamTonKho.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptSanPhamXuatItNhat.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptSanPhamXuatNhieuNhat.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Dataset\DataSetNhapTonXuatSanPham.xsc">
-      <DependentUpon>DataSetNhapTonXuatSanPham.xsd</DependentUpon>
+    <None Include="Dataset\DataSetSanPhamConTrongKho.xsc">
+      <DependentUpon>DataSetSanPhamConTrongKho.xsd</DependentUpon>
     </None>
-    <None Include="Dataset\DataSetNhapTonXuatSanPham.xsd">
+    <None Include="Dataset\DataSetSanPhamConTrongKho.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSetNhapTonXuatSanPham.Designer.vb</LastGenOutput>
+      <LastGenOutput>DataSetSanPhamConTrongKho.Designer.vb</LastGenOutput>
     </None>
-    <None Include="Dataset\DataSetNhapTonXuatSanPham.xss">
-      <DependentUpon>DataSetNhapTonXuatSanPham.xsd</DependentUpon>
+    <None Include="Dataset\DataSetSanPhamConTrongKho.xss">
+      <DependentUpon>DataSetSanPhamConTrongKho.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSetSanPhamTheoSoLuongXuat.xsc">
+      <DependentUpon>DataSetSanPhamTheoSoLuongXuat.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DataSetSanPhamTheoSoLuongXuat.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetSanPhamTheoSoLuongXuat.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Dataset\DataSetSanPhamTheoSoLuongXuat.xss">
+      <DependentUpon>DataSetSanPhamTheoSoLuongXuat.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>

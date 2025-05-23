@@ -34,6 +34,7 @@ Partial Class PhieuXuat
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.cb_Ma_TenSP = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.btn_Sua = New System.Windows.Forms.Button()
         Me.btn_Xoa = New System.Windows.Forms.Button()
@@ -49,7 +50,6 @@ Partial Class PhieuXuat
         Me.QuanLyKhoHangDataSet4 = New QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet4()
         Me.Pro_PhieuXuatTableAdapter = New QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet4TableAdapters.pro_PhieuXuatTableAdapter()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.cb_Ma_TenSP = New System.Windows.Forms.ComboBox()
         Me.Panel2.SuspendLayout()
         CType(Me.QuanLyKhoHangDataSet3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProPhieuNhapBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -62,81 +62,86 @@ Partial Class PhieuXuat
         'cb_MaNCC
         '
         Me.cb_MaNCC.FormattingEnabled = True
-        Me.cb_MaNCC.Location = New System.Drawing.Point(594, 110)
+        Me.cb_MaNCC.Location = New System.Drawing.Point(600, 78)
+        Me.cb_MaNCC.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.cb_MaNCC.Name = "cb_MaNCC"
-        Me.cb_MaNCC.Size = New System.Drawing.Size(186, 28)
+        Me.cb_MaNCC.Size = New System.Drawing.Size(166, 24)
         Me.cb_MaNCC.TabIndex = 7
         '
         'txt_NgayGiaoDich
         '
-        Me.txt_NgayGiaoDich.Location = New System.Drawing.Point(594, 46)
+        Me.txt_NgayGiaoDich.Location = New System.Drawing.Point(600, 27)
+        Me.txt_NgayGiaoDich.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txt_NgayGiaoDich.Name = "txt_NgayGiaoDich"
-        Me.txt_NgayGiaoDich.Size = New System.Drawing.Size(186, 26)
+        Me.txt_NgayGiaoDich.Size = New System.Drawing.Size(166, 22)
         Me.txt_NgayGiaoDich.TabIndex = 6
         '
         'txt_GhiChu
         '
-        Me.txt_GhiChu.Location = New System.Drawing.Point(594, 167)
+        Me.txt_GhiChu.Location = New System.Drawing.Point(600, 124)
+        Me.txt_GhiChu.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txt_GhiChu.Name = "txt_GhiChu"
-        Me.txt_GhiChu.Size = New System.Drawing.Size(186, 26)
+        Me.txt_GhiChu.Size = New System.Drawing.Size(166, 22)
         Me.txt_GhiChu.TabIndex = 6
         '
         'txt_SoLuong
         '
-        Me.txt_SoLuong.Location = New System.Drawing.Point(184, 167)
+        Me.txt_SoLuong.Location = New System.Drawing.Point(236, 124)
+        Me.txt_SoLuong.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txt_SoLuong.Name = "txt_SoLuong"
-        Me.txt_SoLuong.Size = New System.Drawing.Size(139, 26)
+        Me.txt_SoLuong.Size = New System.Drawing.Size(124, 22)
         Me.txt_SoLuong.TabIndex = 6
         '
         'txt_MaGiaoDich
         '
-        Me.txt_MaGiaoDich.Location = New System.Drawing.Point(184, 40)
+        Me.txt_MaGiaoDich.Location = New System.Drawing.Point(236, 22)
+        Me.txt_MaGiaoDich.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txt_MaGiaoDich.Name = "txt_MaGiaoDich"
-        Me.txt_MaGiaoDich.Size = New System.Drawing.Size(139, 26)
+        Me.txt_MaGiaoDich.Size = New System.Drawing.Size(124, 22)
         Me.txt_MaGiaoDich.TabIndex = 6
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(439, 46)
+        Me.Label8.Location = New System.Drawing.Point(462, 27)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(119, 20)
+        Me.Label8.Size = New System.Drawing.Size(102, 16)
         Me.Label8.TabIndex = 5
         Me.Label8.Text = "Ngày Giao Dịch"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(439, 173)
+        Me.Label7.Location = New System.Drawing.Point(462, 128)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(67, 20)
+        Me.Label7.Size = New System.Drawing.Size(53, 16)
         Me.Label7.TabIndex = 4
         Me.Label7.Text = "Ghi Chú"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(439, 113)
+        Me.Label6.Location = New System.Drawing.Point(462, 80)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(139, 20)
+        Me.Label6.Size = New System.Drawing.Size(116, 16)
         Me.Label6.TabIndex = 3
         Me.Label6.Text = "Mã Nhà Cung Cấp"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(38, 173)
+        Me.Label5.Location = New System.Drawing.Point(106, 128)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(78, 20)
+        Me.Label5.Size = New System.Drawing.Size(64, 16)
         Me.Label5.TabIndex = 2
         Me.Label5.Text = "Số Lượng"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(38, 46)
+        Me.Label2.Location = New System.Drawing.Point(106, 27)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(105, 20)
+        Me.Label2.Size = New System.Drawing.Size(88, 16)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Mã Giao Dịch"
         '
@@ -154,43 +159,56 @@ Partial Class PhieuXuat
         Me.Panel2.Controls.Add(Me.Label5)
         Me.Panel2.Controls.Add(Me.Label4)
         Me.Panel2.Controls.Add(Me.Label2)
-        Me.Panel2.Location = New System.Drawing.Point(254, 97)
+        Me.Panel2.Location = New System.Drawing.Point(226, 78)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(872, 212)
+        Me.Panel2.Size = New System.Drawing.Size(899, 170)
         Me.Panel2.TabIndex = 8
+        '
+        'cb_Ma_TenSP
+        '
+        Me.cb_Ma_TenSP.FormattingEnabled = True
+        Me.cb_Ma_TenSP.Location = New System.Drawing.Point(236, 80)
+        Me.cb_Ma_TenSP.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.cb_Ma_TenSP.Name = "cb_Ma_TenSP"
+        Me.cb_Ma_TenSP.Size = New System.Drawing.Size(124, 24)
+        Me.cb_Ma_TenSP.TabIndex = 8
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(38, 113)
+        Me.Label4.Location = New System.Drawing.Point(106, 80)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(109, 20)
+        Me.Label4.Size = New System.Drawing.Size(91, 16)
         Me.Label4.TabIndex = 1
         Me.Label4.Text = "Mã Sản Phẩm"
         '
         'btn_Sua
         '
-        Me.btn_Sua.Location = New System.Drawing.Point(49, 367)
+        Me.btn_Sua.Location = New System.Drawing.Point(43, 348)
+        Me.btn_Sua.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btn_Sua.Name = "btn_Sua"
-        Me.btn_Sua.Size = New System.Drawing.Size(124, 51)
+        Me.btn_Sua.Size = New System.Drawing.Size(110, 41)
         Me.btn_Sua.TabIndex = 1
         Me.btn_Sua.Text = "Sửa"
         Me.btn_Sua.UseVisualStyleBackColor = True
         '
         'btn_Xoa
         '
-        Me.btn_Xoa.Location = New System.Drawing.Point(49, 268)
+        Me.btn_Xoa.Location = New System.Drawing.Point(43, 268)
+        Me.btn_Xoa.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btn_Xoa.Name = "btn_Xoa"
-        Me.btn_Xoa.Size = New System.Drawing.Size(124, 51)
+        Me.btn_Xoa.Size = New System.Drawing.Size(110, 41)
         Me.btn_Xoa.TabIndex = 1
         Me.btn_Xoa.Text = "Xoá"
         Me.btn_Xoa.UseVisualStyleBackColor = True
         '
         'btn_Them
         '
-        Me.btn_Them.Location = New System.Drawing.Point(49, 168)
+        Me.btn_Them.Location = New System.Drawing.Point(43, 188)
+        Me.btn_Them.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btn_Them.Name = "btn_Them"
-        Me.btn_Them.Size = New System.Drawing.Size(124, 51)
+        Me.btn_Them.Size = New System.Drawing.Size(110, 41)
         Me.btn_Them.TabIndex = 1
         Me.btn_Them.Text = "Thêm"
         Me.btn_Them.UseVisualStyleBackColor = True
@@ -199,9 +217,9 @@ Partial Class PhieuXuat
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(41, 65)
+        Me.Label3.Location = New System.Drawing.Point(36, 52)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(142, 46)
+        Me.Label3.Size = New System.Drawing.Size(122, 39)
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "MENU"
         '
@@ -209,9 +227,9 @@ Partial Class PhieuXuat
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(542, 28)
+        Me.Label1.Location = New System.Drawing.Point(570, 21)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(270, 46)
+        Me.Label1.Size = New System.Drawing.Size(234, 39)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "PHIẾU XUẤT"
         '
@@ -238,17 +256,19 @@ Partial Class PhieuXuat
         Me.Panel1.Controls.Add(Me.btn_Xoa)
         Me.Panel1.Controls.Add(Me.btn_Them)
         Me.Panel1.Controls.Add(Me.Label3)
-        Me.Panel1.Location = New System.Drawing.Point(5, 2)
+        Me.Panel1.Location = New System.Drawing.Point(4, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(232, 715)
+        Me.Panel1.Size = New System.Drawing.Size(206, 654)
         Me.Panel1.TabIndex = 7
         '
         'btn_LamMoi
         '
         Me.btn_LamMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_LamMoi.Location = New System.Drawing.Point(49, 469)
+        Me.btn_LamMoi.Location = New System.Drawing.Point(43, 429)
+        Me.btn_LamMoi.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btn_LamMoi.Name = "btn_LamMoi"
-        Me.btn_LamMoi.Size = New System.Drawing.Size(124, 51)
+        Me.btn_LamMoi.Size = New System.Drawing.Size(110, 41)
         Me.btn_LamMoi.TabIndex = 1
         Me.btn_LamMoi.Text = "    Làm Mới"
         Me.btn_LamMoi.UseVisualStyleBackColor = True
@@ -270,30 +290,24 @@ Partial Class PhieuXuat
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(254, 315)
+        Me.DataGridView1.Location = New System.Drawing.Point(226, 252)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 62
         Me.DataGridView1.RowTemplate.Height = 28
-        Me.DataGridView1.Size = New System.Drawing.Size(872, 402)
+        Me.DataGridView1.Size = New System.Drawing.Size(899, 393)
         Me.DataGridView1.TabIndex = 9
-        '
-        'cb_Ma_TenSP
-        '
-        Me.cb_Ma_TenSP.FormattingEnabled = True
-        Me.cb_Ma_TenSP.Location = New System.Drawing.Point(184, 113)
-        Me.cb_Ma_TenSP.Name = "cb_Ma_TenSP"
-        Me.cb_Ma_TenSP.Size = New System.Drawing.Size(139, 28)
-        Me.cb_Ma_TenSP.TabIndex = 8
         '
         'PhieuXuat
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1154, 718)
+        Me.ClientSize = New System.Drawing.Size(1137, 656)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel1)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "PhieuXuat"
         Me.Text = "PhieuXuat"
         Me.Panel2.ResumeLayout(False)

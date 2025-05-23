@@ -114,57 +114,55 @@ Public Class PhieuNhap
 
     Private Sub btn_Them_Click(sender As Object, e As EventArgs) Handles btn_Them.Click
         Dim MaSanPham As String = cb_Ma_TenSP.Text.Trim()
-        Dim MaNhaCungCap As String = cb_MaNCC.Text.Trim() ' Sử dụng Object để có thể gán DBNull.Value
+        Dim MaNhaCungCap As String = cb_MaNCC.Text.Trim()
         Dim NgayGiaoDich As DateTime
         Dim SoLuong As Integer
         Dim GhiChu As String = txt_GhiChu.Text.Trim()
         Dim ngayLuuTru As String
 
-        ' Trích xuất MaSanPham từ chuỗi "1.NguyenA", "2.NguyenB", ...
-        Dim parts() As String = MaSanPham.Split("."c) ' Tách chuỗi dựa vào dấu chấm
+        ' Trích xuất Mã Sản Phẩm từ chuỗi "1.NguyenA", "2.NguyenB", ...
+        Dim parts() As String = MaSanPham.Split("."c)
         If parts.Length > 0 Then
-            MaSanPham = parts(0).Trim() ' Lấy phần tử đầu tiên (số) và loại bỏ khoảng trắng
+            MaSanPham = parts(0).Trim()
         Else
-            MessageBox.Show("Mã sản phẩm không đúng định dạng.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Mã sản phẩm không đúng định dạng. Vui lòng chọn lại.", "Lỗi nhập liệu", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Exit Sub
         End If
 
-        'trích suất mã nhà cung cấp
-        Dim MaNCCC() As String = MaNhaCungCap.Split("."c) ' Tách chuỗi dựa vào dấu chấm
+        ' Trích xuất Mã Nhà Cung Cấp từ chuỗi
+        Dim MaNCCC() As String = MaNhaCungCap.Split("."c)
         If MaNCCC.Length > 0 Then
-            MaNhaCungCap = MaNCCC(0).Trim() ' Lấy phần tử đầu tiên (số) và loại bỏ khoảng trắng
+            MaNhaCungCap = MaNCCC(0).Trim()
         Else
-            MessageBox.Show("Mã nhà cung cấp không đúng định dạng.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Mã nhà cung cấp không đúng định dạng. Vui lòng chọn lại.", "Lỗi nhập liệu", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Exit Sub
         End If
+
         ' Xử lý ngày tháng
         If DateTime.TryParseExact(txt_NgayGiaoDich.Text.Trim(), "yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture, DateTimeStyles.None, NgayGiaoDich) Then
             ngayLuuTru = NgayGiaoDich.ToString("yyyy-MM-dd")
         Else
-            MessageBox.Show("Vui lòng nhập ngày theo định dạng<\ctrl3348>-MM-dd ", "Lỗi định dạng ngày", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            Exit Sub ' Dừng việc xử lý nếu định dạng ngày không hợp lệ
+            MessageBox.Show("Vui lòng nhập ngày theo định dạng yyyy-MM-dd.", "Lỗi định dạng ngày", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Exit Sub
         End If
 
         ' Xử lý số lượng
         If Not Integer.TryParse(txt_SoLuong.Text.Trim(), SoLuong) Then
-            MessageBox.Show("Vui lòng nhập số lượng hợp lệ.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Vui lòng nhập số lượng hợp lệ (số nguyên).", "Lỗi nhập liệu", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Exit Sub
         End If
 
-
-        MessageBox.Show("MaNhaCungCap: " & MaNhaCungCap.ToString())
-        Debug.WriteLine("MaNhaCungCap: " & MaNhaCungCap.ToString())
         Try
             Using con As New SqlConnection(connectionString)
-                Dim query As String = "INSERT INTO LichSuGiaoDich (MaSanPham, LoaiGiaoDich, SoLuong, NgayGiaoDich, MaNhaCungCap, GhiChu)" &
-                                    " VALUES (@MaSanPham, @LoaiGiaoDich, @SoLuong, @NgayGiaoDich, @MaNhaCungCap, @GhiChu)"
+                Dim query As String = "INSERT INTO LichSuGiaoDich (MaSanPham, LoaiGiaoDich, SoLuong, NgayGiaoDich, MaNhaCungCap, GhiChu) " &
+                                  "VALUES (@MaSanPham, @LoaiGiaoDich, @SoLuong, @NgayGiaoDich, @MaNhaCungCap, @GhiChu)"
 
                 Using cmd As New SqlCommand(query, con)
                     cmd.Parameters.AddWithValue("@MaSanPham", MaSanPham)
                     cmd.Parameters.AddWithValue("@LoaiGiaoDich", "Nhap")
                     cmd.Parameters.AddWithValue("@SoLuong", SoLuong)
                     cmd.Parameters.AddWithValue("@NgayGiaoDich", ngayLuuTru)
-                    cmd.Parameters.AddWithValue("@MaNhaCungCap", MaNhaCungCap) ' Sử dụng biến MaNhaCungCap đã xử lý
+                    cmd.Parameters.AddWithValue("@MaNhaCungCap", MaNhaCungCap)
                     cmd.Parameters.AddWithValue("@GhiChu", GhiChu)
 
                     con.Open()
@@ -172,122 +170,219 @@ Public Class PhieuNhap
                 End Using
             End Using
 
-            MessageBox.Show("Lưu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            ' Cập nhật lại DataGridView
-            'Me.Pro_PhieuNhapTableAdapter.Fill(Me.QuanLyKhoHangDataSet3.pro_PhieuNhap)
+            MessageBox.Show("Thêm phiếu nhập thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information)
             LoadPhieuNhap()
             clearText()
 
         Catch ex As Exception
-            MessageBox.Show("Lỗi khi lưu: " & ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Đã xảy ra lỗi khi lưu dữ liệu: " & ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
-
     End Sub
-
     Private Sub btn_Xoa_Click(sender As Object, e As EventArgs) Handles btn_Xoa.Click
-        Dim MaGiaoDich As String = txt_MaGiaoDich.Text.Trim()
-        If String.IsNullOrEmpty(MaGiaoDich) Then
-            MessageBox.Show("Vui lòng chọn giao dịch để xóa.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        Dim MaGiaoDich As Integer
+        If Not Integer.TryParse(txt_MaGiaoDich.Text.Trim(), MaGiaoDich) Then
+            MessageBox.Show("Vui lòng chọn giao dịch hợp lệ để xóa.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             Return
         End If
-        Try
-            Using con As New SqlConnection(connectionString)
-                Dim query As String = "DELETE FROM LichSuGiaoDich WHERE MaGiaoDich = @MaGiaoDich"
-                Using cmd As New SqlCommand(query, con)
-                    cmd.Parameters.AddWithValue("@MaGiaoDich", MaGiaoDich)
-                    con.Open()
-                    cmd.ExecuteNonQuery()
-                End Using
+
+        Using con As New SqlConnection(connectionString)
+            con.Open()
+            Using tran = con.BeginTransaction()
+                Try
+                    ' Lấy thông tin phiếu nhập cần xóa
+                    Dim queryGet As String = "SELECT MaSanPham, SoLuong, LoaiGiaoDich FROM LichSuGiaoDich WHERE MaGiaoDich = @MaGiaoDich"
+                    Dim MaSanPham As Integer = 0
+                    Dim SoLuong As Integer = 0
+                    Dim LoaiGiaoDich As String = ""
+                    Using cmdGet As New SqlCommand(queryGet, con, tran)
+                        cmdGet.Parameters.AddWithValue("@MaGiaoDich", MaGiaoDich)
+                        Using reader = cmdGet.ExecuteReader()
+                            If reader.Read() Then
+                                MaSanPham = Convert.ToInt32(reader("MaSanPham"))
+                                SoLuong = Convert.ToInt32(reader("SoLuong"))
+                                LoaiGiaoDich = reader("LoaiGiaoDich").ToString()
+                            Else
+                                MessageBox.Show("Không tìm thấy giao dịch để xóa.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                                tran.Rollback()
+                                Return
+                            End If
+                        End Using
+                    End Using
+
+                    ' Chỉ kiểm tra tồn kho nếu xóa phiếu NHẬP (vì xóa phiếu nhập sẽ làm giảm tồn)
+                    If LoaiGiaoDich = "Nhap" Then
+                        ' Lấy tồn kho hiện tại
+                        Dim queryTon As String = "SELECT SoLuongTon FROM SanPham WHERE MaSanPham = @MaSanPham"
+                        Dim soLuongTon As Integer = 0
+                        Using cmdTon As New SqlCommand(queryTon, con, tran)
+                            cmdTon.Parameters.AddWithValue("@MaSanPham", MaSanPham)
+                            Dim result = cmdTon.ExecuteScalar()
+                            If result IsNot Nothing Then
+                                soLuongTon = Convert.ToInt32(result)
+                            End If
+                        End Using
+
+                        ' Kiểm tra tồn kho nếu xóa nhập làm tồn < 0
+                        If soLuongTon - SoLuong < 0 Then
+                            MessageBox.Show("Không thể xóa phiếu nhập này vì sẽ làm tồn kho âm.", "Lỗi tồn kho", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                            tran.Rollback()
+                            Return
+                        End If
+                    End If
+
+                    ' Thực hiện xóa
+                    Dim queryDelete As String = "DELETE FROM LichSuGiaoDich WHERE MaGiaoDich = @MaGiaoDich"
+                    Using cmdDelete As New SqlCommand(queryDelete, con, tran)
+                        cmdDelete.Parameters.AddWithValue("@MaGiaoDich", MaGiaoDich)
+                        cmdDelete.ExecuteNonQuery()
+                    End Using
+
+                    tran.Commit()
+                    MessageBox.Show("Xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    LoadPhieuNhap() ' Hoặc LoadPhieuXuat() tùy bạn
+                Catch ex As Exception
+                    tran.Rollback()
+                    MessageBox.Show("Lỗi khi xóa: " & ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                End Try
             End Using
-            MessageBox.Show("Xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            'Me.Pro_PhieuNhapTableAdapter.Fill(Me.QuanLyKhoHangDataSet3.pro_PhieuNhap)
-            LoadPhieuNhap()
-        Catch ex As Exception
-            MessageBox.Show("Lỗi khi Xoá: " & ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End Try
+        End Using
     End Sub
 
     Private Sub btn_Sua_Click(sender As Object, e As EventArgs) Handles btn_Sua.Click
-        Dim MaGiaoDich As String = txt_MaGiaoDich.Text.Trim()
-        Dim MaSanPham As String = cb_Ma_TenSP.Text.Trim()
-        Dim MaNhaCungCap As String = cb_MaNCC.Text.Trim()
-        Dim NgayGiaoDich As DateTime
-        Dim SoLuong As Integer
         Dim GhiChu As String = txt_GhiChu.Text.Trim()
-        Dim ngayLuuTru As String = "" ' Khai báo biến để lưu trữ ngày đã định dạng
+        Dim MaGiaoDich As Integer
 
-        ' Xử lý MaNhaCungCap để có thể nhận giá trị NULL
-        Dim MaNCC() As String = MaNhaCungCap.Split("."c) ' Tách chuỗi dựa vào dấu chấm
-        If MaNCC.Length > 0 Then
-            MaNhaCungCap = MaNCC(0).Trim() ' Lấy phần tử đầu tiên (số) và loại bỏ khoảng trắng
-        Else
-            MessageBox.Show("Mã sản phẩm không đúng định dạng.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        If Not Integer.TryParse(txt_MaGiaoDich.Text.Trim(), MaGiaoDich) Then
+            MessageBox.Show("Mã giao dịch không hợp lệ.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Exit Sub
         End If
 
-
-        ' Trích xuất MaSanPham từ chuỗi "1.NguyenA", "2.NguyenB", ...
-        Dim parts() As String = MaSanPham.Split("."c) ' Tách chuỗi dựa vào dấu chấm
+        ' Lấy mã sản phẩm mới và tách mã
+        Dim MaSanPhamMoi As String = cb_Ma_TenSP.Text.Trim()
+        Dim parts() As String = MaSanPhamMoi.Split("."c)
         If parts.Length > 0 Then
-            MaSanPham = parts(0).Trim() ' Lấy phần tử đầu tiên (số) và loại bỏ khoảng trắng
+            MaSanPhamMoi = parts(0).Trim()
         Else
             MessageBox.Show("Mã sản phẩm không đúng định dạng.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Exit Sub
         End If
+
         ' Xử lý ngày tháng
-        If DateTime.TryParseExact(txt_NgayGiaoDich.Text.Trim(), "yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture, DateTimeStyles.None, NgayGiaoDich) Then
-            ' Chuyển đổi thành công theo định dạng<ctrl98>-MM-dd
+        Dim NgayGiaoDich As DateTime
+        Dim ngayLuuTru As String = ""
+        If DateTime.TryParseExact(txt_NgayGiaoDich.Text.Trim(), "yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture, Globalization.DateTimeStyles.None, NgayGiaoDich) Then
             ngayLuuTru = NgayGiaoDich.ToString("yyyy-MM-dd")
-
-        ElseIf DateTime.TryParseExact(txt_NgayGiaoDich.Text.Trim(), "dd-MM-yyyy", System.Globalization.CultureInfo.InvariantCulture, DateTimeStyles.None, NgayGiaoDich) Then
-            ' Chuyển đổi thành công theo định dạng dd-MM-yyyy
-            ngayLuuTru = NgayGiaoDich.ToString("yyyy-MM-dd") ' Chuyển đổi về<ctrl98>-MM-dd
-
+        ElseIf DateTime.TryParseExact(txt_NgayGiaoDich.Text.Trim(), "dd-MM-yyyy", System.Globalization.CultureInfo.InvariantCulture, Globalization.DateTimeStyles.None, NgayGiaoDich) Then
+            ngayLuuTru = NgayGiaoDich.ToString("yyyy-MM-dd")
         Else
-            MessageBox.Show("Vui lòng nhập ngày theo định dạng<ctrl98>-MM-dd hoặc dd-MM-yyyy.", "Lỗi định dạng ngày", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            Exit Sub ' Dừng việc xử lý nếu định dạng ngày không hợp lệ
+            MessageBox.Show("Vui lòng nhập ngày theo định dạng yyyy-MM-dd hoặc dd-MM-yyyy.", "Lỗi định dạng ngày", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Exit Sub
         End If
 
         ' Xử lý số lượng
-        If Not Integer.TryParse(txt_SoLuong.Text.Trim(), SoLuong) Then
-            MessageBox.Show("Vui lòng nhập số lượng hợp lệ.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Dim SoLuongMoi As Integer
+        If Not Integer.TryParse(txt_SoLuong.Text.Trim(), SoLuongMoi) OrElse SoLuongMoi <= 0 Then
+            MessageBox.Show("Vui lòng nhập số lượng hợp lệ (lớn hơn 0).", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Exit Sub
         End If
 
-
-
-
-        If String.IsNullOrEmpty(MaGiaoDich) Then
-            MessageBox.Show("Vui lòng chọn giao dịch để sửa.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Return
+        ' Xử lý mã nhà cung cấp
+        Dim MaNhaCungCap As Object
+        If String.IsNullOrWhiteSpace(cb_MaNCC.Text) Then
+            MaNhaCungCap = DBNull.Value
+        Else
+            Dim MaNCC() As String = cb_MaNCC.Text.Split("."c)
+            If MaNCC.Length > 0 Then
+                MaNhaCungCap = MaNCC(0).Trim()
+            Else
+                MessageBox.Show("Mã nhà cung cấp không đúng định dạng.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                Exit Sub
+            End If
         End If
 
-        Try
-            Using con As New SqlConnection(connectionString)
-                Dim query As String = "UPDATE LichSuGiaoDich SET MaSanPham = @MaSanPham ," &
-                                    "SoLuong = @SoLuong, " &
-                                    "NgayGiaoDich = @NgayGiaoDich, " &
-                                    "MaNhaCungCap = @MaNhaCungCap, " &
-                                    "GhiChu = @GhiChu " &
-                                    "WHERE MaGiaoDich = @MaGiaoDich"
-                Using cmd As New SqlCommand(query, con)
-                    cmd.Parameters.AddWithValue("@MaSanPham", MaSanPham)
-                    cmd.Parameters.AddWithValue("@SoLuong", SoLuong)
-                    cmd.Parameters.AddWithValue("@NgayGiaoDich", ngayLuuTru)
-                    cmd.Parameters.AddWithValue("@MaNhaCungCap", MaNhaCungCap) ' Sử dụng biến MaNhaCungCap đã xử lý
-                    cmd.Parameters.AddWithValue("@GhiChu", GhiChu)
-                    cmd.Parameters.AddWithValue("@MaGiaoDich", MaGiaoDich)
-                    con.Open()
-                    cmd.ExecuteNonQuery()
-                End Using
-            End Using
+        Using con As New SqlConnection(connectionString)
+            con.Open()
+            Using tran = con.BeginTransaction()
+                Try
+                    ' Lấy dữ liệu phiếu nhập cũ
+                    Dim queryOld = "SELECT MaSanPham, SoLuong FROM LichSuGiaoDich WHERE MaGiaoDich = @MaGiaoDich"
+                    Dim MaSanPhamCu As String = ""
+                    Dim SoLuongCu As Integer = 0
+                    Using cmdOld As New SqlCommand(queryOld, con, tran)
+                        cmdOld.Parameters.AddWithValue("@MaGiaoDich", MaGiaoDich)
+                        Using reader = cmdOld.ExecuteReader()
+                            If reader.Read() Then
+                                MaSanPhamCu = reader("MaSanPham").ToString()
+                                SoLuongCu = Convert.ToInt32(reader("SoLuong"))
+                            Else
+                                MessageBox.Show("Không tìm thấy giao dịch cần sửa.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                                tran.Rollback()
+                                Exit Sub
+                            End If
+                        End Using
+                    End Using
 
-            MessageBox.Show("Sửa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            'Me.Pro_PhieuNhapTableAdapter.Fill(Me.QuanLyKhoHangDataSet3.pro_PhieuNhap)
-            LoadPhieuNhap()
-        Catch ex As Exception
-            MessageBox.Show("Lỗi khi sửa: " & ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End Try
+                    ' Lấy tồn kho hiện tại của sản phẩm mới
+                    Dim queryTon As String = "SELECT SoLuongTon FROM SanPham WHERE MaSanPham = @MaSanPham"
+                    Dim soLuongTon As Integer = 0
+                    Using cmdTon As New SqlCommand(queryTon, con, tran)
+                        cmdTon.Parameters.AddWithValue("@MaSanPham", MaSanPhamMoi)
+                        Dim result = cmdTon.ExecuteScalar()
+                        If result IsNot Nothing Then
+                            soLuongTon = Convert.ToInt32(result)
+                        End If
+                    End Using
+
+                    ' Tính tồn kho sau khi sửa phiếu nhập
+                    ' Nếu đổi mã sản phẩm, tồn mới = tồn kho sản phẩm mới - số lượng nhập mới
+                    ' và tồn cũ của sản phẩm cũ cộng lại số lượng cũ (tránh mất tồn kho cũ)
+                    Dim tonSauSua As Integer
+                    If MaSanPhamMoi = MaSanPhamCu Then
+                        tonSauSua = soLuongTon - SoLuongMoi + SoLuongCu
+                    Else
+                        ' Kiểm tra tồn kho sản phẩm cũ để cộng lại số lượng cũ
+                        Dim queryTonCu = "SELECT SoLuongTon FROM SanPham WHERE MaSanPham = @MaSanPham"
+                        Dim soLuongTonCu As Integer = 0
+                        Using cmdTonCu As New SqlCommand(queryTonCu, con, tran)
+                            cmdTonCu.Parameters.AddWithValue("@MaSanPham", MaSanPhamCu)
+                            Dim resultCu = cmdTonCu.ExecuteScalar()
+                            If resultCu IsNot Nothing Then
+                                soLuongTonCu = Convert.ToInt32(resultCu)
+                            End If
+                        End Using
+
+                        tonSauSua = soLuongTon - SoLuongMoi ' tồn sản phẩm mới trừ đi số nhập mới
+                        ' Không cập nhật tồn sản phẩm cũ ở đây vì trigger sẽ xử lý tự động
+                        ' Chỉ kiểm tra tồn kho sản phẩm mới thôi
+                    End If
+
+                    If tonSauSua < 0 Then
+                        MessageBox.Show("Không thể sửa vì sẽ làm tồn kho âm.", "Lỗi tồn kho", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                        tran.Rollback()
+                        Exit Sub
+                    End If
+
+                    ' Cập nhật phiếu nhập
+                    Dim queryUpdatePhieu As String = "UPDATE LichSuGiaoDich SET MaSanPham=@MaSanPham, SoLuong=@SoLuong, NgayGiaoDich=@NgayGiaoDich, MaNhaCungCap=@MaNhaCungCap, GhiChu=@GhiChu WHERE MaGiaoDich=@MaGiaoDich"
+                    Using cmdUpdatePhieu As New SqlCommand(queryUpdatePhieu, con, tran)
+                        cmdUpdatePhieu.Parameters.AddWithValue("@MaSanPham", MaSanPhamMoi)
+                        cmdUpdatePhieu.Parameters.AddWithValue("@SoLuong", SoLuongMoi)
+                        cmdUpdatePhieu.Parameters.AddWithValue("@NgayGiaoDich", ngayLuuTru)
+                        cmdUpdatePhieu.Parameters.AddWithValue("@MaNhaCungCap", MaNhaCungCap)
+                        cmdUpdatePhieu.Parameters.AddWithValue("@GhiChu", GhiChu)
+                        cmdUpdatePhieu.Parameters.AddWithValue("@MaGiaoDich", MaGiaoDich)
+                        cmdUpdatePhieu.ExecuteNonQuery()
+                    End Using
+
+                    tran.Commit()
+                    MessageBox.Show("Sửa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    LoadPhieuNhap()
+                Catch ex As Exception
+                    tran.Rollback()
+                    MessageBox.Show("Lỗi khi sửa: " & ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                End Try
+            End Using
+        End Using
     End Sub
 
     Private Sub btn_LamMoi_Click(sender As Object, e As EventArgs) Handles btn_LamMoi.Click

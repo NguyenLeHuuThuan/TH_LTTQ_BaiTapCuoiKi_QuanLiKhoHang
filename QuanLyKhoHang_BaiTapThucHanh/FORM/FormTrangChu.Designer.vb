@@ -60,9 +60,8 @@ Partial Class FormTrangChu
         Me.Panel1.Controls.Add(Me.btnDangXuat)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(321, 868)
+        Me.Panel1.Size = New System.Drawing.Size(286, 695)
         Me.Panel1.TabIndex = 0
         '
         'lblNgayDangNhap
@@ -70,9 +69,9 @@ Partial Class FormTrangChu
         Me.lblNgayDangNhap.AutoSize = True
         Me.lblNgayDangNhap.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNgayDangNhap.ForeColor = System.Drawing.Color.Transparent
-        Me.lblNgayDangNhap.Location = New System.Drawing.Point(11, 495)
+        Me.lblNgayDangNhap.Location = New System.Drawing.Point(10, 396)
         Me.lblNgayDangNhap.Name = "lblNgayDangNhap"
-        Me.lblNgayDangNhap.Size = New System.Drawing.Size(140, 20)
+        Me.lblNgayDangNhap.Size = New System.Drawing.Size(122, 17)
         Me.lblNgayDangNhap.TabIndex = 6
         Me.lblNgayDangNhap.Text = "Ngày đăng nhập: "
         '
@@ -81,9 +80,9 @@ Partial Class FormTrangChu
         Me.lblTenNguoiDung.AutoSize = True
         Me.lblTenNguoiDung.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblTenNguoiDung.ForeColor = System.Drawing.Color.Transparent
-        Me.lblTenNguoiDung.Location = New System.Drawing.Point(11, 439)
+        Me.lblTenNguoiDung.Location = New System.Drawing.Point(10, 351)
         Me.lblTenNguoiDung.Name = "lblTenNguoiDung"
-        Me.lblTenNguoiDung.Size = New System.Drawing.Size(137, 20)
+        Me.lblTenNguoiDung.Size = New System.Drawing.Size(116, 17)
         Me.lblTenNguoiDung.TabIndex = 5
         Me.lblTenNguoiDung.Text = "Tên người dùng: "
         '
@@ -92,9 +91,9 @@ Partial Class FormTrangChu
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Transparent
-        Me.Label1.Location = New System.Drawing.Point(45, 348)
+        Me.Label1.Location = New System.Drawing.Point(40, 278)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(226, 41)
+        Me.Label1.Size = New System.Drawing.Size(188, 35)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "Quản Trị viên"
         '
@@ -105,10 +104,9 @@ Partial Class FormTrangChu
         Me.btnDangXuat.ForeColor = System.Drawing.Color.Red
         Me.btnDangXuat.Image = Global.QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.logout
         Me.btnDangXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnDangXuat.Location = New System.Drawing.Point(39, 774)
-        Me.btnDangXuat.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnDangXuat.Location = New System.Drawing.Point(35, 619)
         Me.btnDangXuat.Name = "btnDangXuat"
-        Me.btnDangXuat.Size = New System.Drawing.Size(242, 69)
+        Me.btnDangXuat.Size = New System.Drawing.Size(215, 55)
         Me.btnDangXuat.TabIndex = 3
         Me.btnDangXuat.Text = "Đăng xuất"
         Me.btnDangXuat.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -119,10 +117,9 @@ Partial Class FormTrangChu
         Me.PictureBox1.BackgroundImage = Global.QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.User_icon_cp_svg
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PictureBox1.Location = New System.Drawing.Point(65, 110)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.PictureBox1.Location = New System.Drawing.Point(58, 88)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(181, 200)
+        Me.PictureBox1.Size = New System.Drawing.Size(161, 161)
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
         '
@@ -133,31 +130,28 @@ Partial Class FormTrangChu
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Panel2.Controls.Add(Me.PanelMain)
         Me.Panel2.Controls.Add(Me.MenuStrip1)
-        Me.Panel2.Location = New System.Drawing.Point(323, 2)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Panel2.Location = New System.Drawing.Point(287, 2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1310, 865)
+        Me.Panel2.Size = New System.Drawing.Size(1165, 693)
         Me.Panel2.TabIndex = 1
         '
         'PanelMain
         '
         Me.PanelMain.BackColor = System.Drawing.SystemColors.ActiveBorder
         Me.PanelMain.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.PanelMain.Location = New System.Drawing.Point(3, 39)
-        Me.PanelMain.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.PanelMain.Location = New System.Drawing.Point(3, 31)
         Me.PanelMain.Name = "PanelMain"
-        Me.PanelMain.Size = New System.Drawing.Size(1299, 818)
+        Me.PanelMain.Size = New System.Drawing.Size(1155, 655)
         Me.PanelMain.TabIndex = 1
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.GripMargin = New System.Windows.Forms.Padding(2, 2, 0, 2)
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TrangChủToolStripMenuItem, Me.TrangChủToolStripMenuItem1, Me.KhoToolStripMenuItem, Me.ThốngKêBáoCáoToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(7, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(1306, 33)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(6, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1161, 28)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -165,7 +159,7 @@ Partial Class FormTrangChu
         '
         Me.TrangChủToolStripMenuItem.Image = Global.QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.home
         Me.TrangChủToolStripMenuItem.Name = "TrangChủToolStripMenuItem"
-        Me.TrangChủToolStripMenuItem.Size = New System.Drawing.Size(124, 29)
+        Me.TrangChủToolStripMenuItem.Size = New System.Drawing.Size(107, 24)
         Me.TrangChủToolStripMenuItem.Text = "Trang chủ"
         '
         'TrangChủToolStripMenuItem1
@@ -173,21 +167,21 @@ Partial Class FormTrangChu
         Me.TrangChủToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SảnPhẩmToolStripMenuItem, Me.NhàCungCấpToolStripMenuItem})
         Me.TrangChủToolStripMenuItem1.Image = Global.QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.pngtree_vector_users_icon_png_image_856952
         Me.TrangChủToolStripMenuItem1.Name = "TrangChủToolStripMenuItem1"
-        Me.TrangChủToolStripMenuItem1.Size = New System.Drawing.Size(109, 29)
+        Me.TrangChủToolStripMenuItem1.Size = New System.Drawing.Size(93, 24)
         Me.TrangChủToolStripMenuItem1.Text = "Quản lý"
         '
         'SảnPhẩmToolStripMenuItem
         '
         Me.SảnPhẩmToolStripMenuItem.Image = Global.QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.box
         Me.SảnPhẩmToolStripMenuItem.Name = "SảnPhẩmToolStripMenuItem"
-        Me.SảnPhẩmToolStripMenuItem.Size = New System.Drawing.Size(223, 34)
+        Me.SảnPhẩmToolStripMenuItem.Size = New System.Drawing.Size(183, 26)
         Me.SảnPhẩmToolStripMenuItem.Text = "Sản phẩm"
         '
         'NhàCungCấpToolStripMenuItem
         '
         Me.NhàCungCấpToolStripMenuItem.Image = Global.QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.User_icon_cp_svg
         Me.NhàCungCấpToolStripMenuItem.Name = "NhàCungCấpToolStripMenuItem"
-        Me.NhàCungCấpToolStripMenuItem.Size = New System.Drawing.Size(223, 34)
+        Me.NhàCungCấpToolStripMenuItem.Size = New System.Drawing.Size(183, 26)
         Me.NhàCungCấpToolStripMenuItem.Text = "Nhà cung cấp"
         '
         'KhoToolStripMenuItem
@@ -195,21 +189,21 @@ Partial Class FormTrangChu
         Me.KhoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PhiếuNhậpToolStripMenuItem, Me.PhiêuXuấtToolStripMenuItem})
         Me.KhoToolStripMenuItem.Image = Global.QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.warehouse
         Me.KhoToolStripMenuItem.Name = "KhoToolStripMenuItem"
-        Me.KhoToolStripMenuItem.Size = New System.Drawing.Size(79, 29)
+        Me.KhoToolStripMenuItem.Size = New System.Drawing.Size(69, 24)
         Me.KhoToolStripMenuItem.Text = "Kho"
         '
         'PhiếuNhậpToolStripMenuItem
         '
         Me.PhiếuNhậpToolStripMenuItem.Image = Global.QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.transport
         Me.PhiếuNhậpToolStripMenuItem.Name = "PhiếuNhậpToolStripMenuItem"
-        Me.PhiếuNhậpToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
+        Me.PhiếuNhậpToolStripMenuItem.Size = New System.Drawing.Size(165, 26)
         Me.PhiếuNhậpToolStripMenuItem.Text = "Phiếu nhập"
         '
         'PhiêuXuấtToolStripMenuItem
         '
         Me.PhiêuXuấtToolStripMenuItem.Image = Global.QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.product__1_
         Me.PhiêuXuấtToolStripMenuItem.Name = "PhiêuXuấtToolStripMenuItem"
-        Me.PhiêuXuấtToolStripMenuItem.Size = New System.Drawing.Size(270, 34)
+        Me.PhiêuXuấtToolStripMenuItem.Size = New System.Drawing.Size(165, 26)
         Me.PhiêuXuấtToolStripMenuItem.Text = "Phiêu xuất"
         '
         'ThốngKêBáoCáoToolStripMenuItem
@@ -217,14 +211,14 @@ Partial Class FormTrangChu
         Me.ThốngKêBáoCáoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BáoCáoKhoToolStripMenuItem, Me.BiểuĐồToolStripMenuItem})
         Me.ThốngKêBáoCáoToolStripMenuItem.Image = Global.QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.analytics
         Me.ThốngKêBáoCáoToolStripMenuItem.Name = "ThốngKêBáoCáoToolStripMenuItem"
-        Me.ThốngKêBáoCáoToolStripMenuItem.Size = New System.Drawing.Size(203, 29)
+        Me.ThốngKêBáoCáoToolStripMenuItem.Size = New System.Drawing.Size(172, 24)
         Me.ThốngKêBáoCáoToolStripMenuItem.Text = "Thống kê - báo cáo"
         '
         'BáoCáoKhoToolStripMenuItem
         '
         Me.BáoCáoKhoToolStripMenuItem.Image = Global.QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.report
         Me.BáoCáoKhoToolStripMenuItem.Name = "BáoCáoKhoToolStripMenuItem"
-        Me.BáoCáoKhoToolStripMenuItem.Size = New System.Drawing.Size(212, 34)
+        Me.BáoCáoKhoToolStripMenuItem.Size = New System.Drawing.Size(174, 26)
         Me.BáoCáoKhoToolStripMenuItem.Text = "Báo cáo kho"
         '
         'BiểuĐồToolStripMenuItem
@@ -232,38 +226,37 @@ Partial Class FormTrangChu
         Me.BiểuĐồToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TỷLệNhậpHàngTheoNhàCungCấpToolStripMenuItem, Me.SoSánhSốLượngNhậpXuấtVàTồnKhoCủaTừngSảnPhẩmToolStripMenuItem, Me.ThốngKêHoạtĐộngKhoHàngTheoSảnPhẩmToolStripMenuItem})
         Me.BiểuĐồToolStripMenuItem.Image = Global.QuanLyKhoHang_BaiTapThucHanh.My.Resources.Resources.product_selling
         Me.BiểuĐồToolStripMenuItem.Name = "BiểuĐồToolStripMenuItem"
-        Me.BiểuĐồToolStripMenuItem.Size = New System.Drawing.Size(212, 34)
+        Me.BiểuĐồToolStripMenuItem.Size = New System.Drawing.Size(174, 26)
         Me.BiểuĐồToolStripMenuItem.Text = "Biểu đồ"
         '
         'TỷLệNhậpHàngTheoNhàCungCấpToolStripMenuItem
         '
         Me.TỷLệNhậpHàngTheoNhàCungCấpToolStripMenuItem.Name = "TỷLệNhậpHàngTheoNhàCungCấpToolStripMenuItem"
-        Me.TỷLệNhậpHàngTheoNhàCungCấpToolStripMenuItem.Size = New System.Drawing.Size(597, 34)
+        Me.TỷLệNhậpHàngTheoNhàCungCấpToolStripMenuItem.Size = New System.Drawing.Size(488, 26)
         Me.TỷLệNhậpHàngTheoNhàCungCấpToolStripMenuItem.Text = "Tỷ lệ nhập hàng theo nhà cung cấp"
         '
         'SoSánhSốLượngNhậpXuấtVàTồnKhoCủaTừngSảnPhẩmToolStripMenuItem
         '
         Me.SoSánhSốLượngNhậpXuấtVàTồnKhoCủaTừngSảnPhẩmToolStripMenuItem.Name = "SoSánhSốLượngNhậpXuấtVàTồnKhoCủaTừngSảnPhẩmToolStripMenuItem"
-        Me.SoSánhSốLượngNhậpXuấtVàTồnKhoCủaTừngSảnPhẩmToolStripMenuItem.Size = New System.Drawing.Size(597, 34)
+        Me.SoSánhSốLượngNhậpXuấtVàTồnKhoCủaTừngSảnPhẩmToolStripMenuItem.Size = New System.Drawing.Size(488, 26)
         Me.SoSánhSốLượngNhậpXuấtVàTồnKhoCủaTừngSảnPhẩmToolStripMenuItem.Text = "So sánh số lượng Nhập, Xuất và Tồn kho của từng sản phẩm"
         '
         'ThốngKêHoạtĐộngKhoHàngTheoSảnPhẩmToolStripMenuItem
         '
         Me.ThốngKêHoạtĐộngKhoHàngTheoSảnPhẩmToolStripMenuItem.Name = "ThốngKêHoạtĐộngKhoHàngTheoSảnPhẩmToolStripMenuItem"
-        Me.ThốngKêHoạtĐộngKhoHàngTheoSảnPhẩmToolStripMenuItem.Size = New System.Drawing.Size(597, 34)
+        Me.ThốngKêHoạtĐộngKhoHàngTheoSảnPhẩmToolStripMenuItem.Size = New System.Drawing.Size(488, 26)
         Me.ThốngKêHoạtĐộngKhoHàngTheoSảnPhẩmToolStripMenuItem.Text = "Thống kê hoạt động kho hàng theo sản phẩm"
         '
         'FormTrangChu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ClientSize = New System.Drawing.Size(1637, 871)
+        Me.ClientSize = New System.Drawing.Size(1449, 697)
         Me.ControlBox = False
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "FormTrangChu"

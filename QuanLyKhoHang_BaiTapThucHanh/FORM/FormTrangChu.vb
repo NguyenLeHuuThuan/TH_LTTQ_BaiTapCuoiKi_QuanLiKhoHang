@@ -1,4 +1,7 @@
-﻿Public Class FormTrangChu
+﻿Imports System.Data.SqlClient
+Imports Microsoft.Reporting.WinForms
+
+Public Class FormTrangChu
 
 
     Private hoTenNguoiDung As String
@@ -31,10 +34,93 @@
     End Sub
 
     Private Sub BáoCáoKhoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BáoCáoKhoToolStripMenuItem.Click
-        Dim fl As New FormBaoCaoThongKe()
-        LoadChildForm(fl)
+        Dim choice As String = InputBox("Chọn báo cáo:" & vbCrLf &
+                                        "1. Sản phẩm còn trong kho" & vbCrLf &
+                                        "2. Sản phẩm được xuất nhiều nhất" & vbCrLf &
+                                        "3. Sản phẩm được xuất ít nhất", "Chọn báo cáo")
+        If String.IsNullOrWhiteSpace(choice) Then
+            Return
+        End If
+        Select Case choice.Trim()
+            Case "1"
+                ShowReport("Report_SanPhamTonKho.rdlc", GetDataSanPhamConTrongKho())
+            Case "2"
+                ShowReport("rptSanPhamXuatNhieuNhat.rdlc", GetDataSanPhamXuatNhieuNhat())
+            Case "3"
+                ShowReport("rptSanPhamXuatItNhat.rdlc", GetDataSanPhamXuatItNhat())
+            Case Else
+                MessageBox.Show("Lựa chọn không hợp lệ!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End Select
     End Sub
+    Private Function GetDataSanPhamConTrongKho() As DataTable
+        Dim query As String = "SELECT TenSanPham, SoLuongTon FROM SanPham WHERE SoLuongTon > 0"
+        Return GetDataTable(query)
+    End Function
+    Private Function GetDataSanPhamXuatNhieuNhat() As DataTable
+        Dim query As String = "
+        SELECT sp.MaSanPham, sp.TenSanPham, SUM(ls.SoLuong) AS TongSoLuongXuat
+        FROM LichSuGiaoDich ls
+        INNER JOIN SanPham sp ON ls.MaSanPham = sp.MaSanPham
+        WHERE ls.LoaiGiaoDich = N'Xuat'
+        GROUP BY sp.MaSanPham,  sp.TenSanPham
+        ORDER BY TongSoLuongXuat DESC"
+        Return GetDataTable(query)
+    End Function
 
+    Private Function GetDataSanPhamXuatItNhat() As DataTable
+        Dim query As String = "
+        SELECT TOP 10 sp.MaSanPham, sp.TenSanPham, SUM(ls.SoLuong) AS TongSoLuongXuat
+        FROM LichSuGiaoDich ls
+        INNER JOIN SanPham sp ON ls.MaSanPham = sp.MaSanPham
+        WHERE ls.LoaiGiaoDich = N'Xuat'
+        GROUP BY sp.MaSanPham,sp.TenSanPham
+        ORDER BY TongSoLuongXuat ASC"
+        Return GetDataTable(query)
+    End Function
+    Private Function GetDataTable(query As String) As DataTable
+        Dim dt As New DataTable()
+        Using con As New SqlConnection(connectionString)
+            Using cmd As New SqlCommand(query, con)
+                con.Open()
+                dt.Load(cmd.ExecuteReader())
+            End Using
+        End Using
+        Return dt
+    End Function
+
+    Public Sub ShowReport(reportName As String, dt As DataTable)
+        ' Tạo Form mới để chứa ReportViewer
+        Dim frm As New Form With {
+                .Width = 800,
+                .Height = 600,
+                .Text = "Xem báo cáo"
+                }
+
+        ' Tạo ReportViewer
+        Dim reportViewer As New ReportViewer With {
+                .Dock = DockStyle.Fill,
+                .ProcessingMode = ProcessingMode.Local
+                }
+
+        ' Thêm ReportViewer vào form
+        frm.Controls.Add(reportViewer)
+
+        ' Đường dẫn tới report file
+        Dim reportFolder = System.IO.Path.Combine(Application.StartupPath, "Report")
+        Dim reportPath = System.IO.Path.Combine(reportFolder, reportName)
+        ' Thiết lập báo cáo
+        reportViewer.LocalReport.ReportPath = reportPath
+        ' Clear các DataSource cũ
+        reportViewer.LocalReport.DataSources.Clear()
+        ' Thêm DataSource mới, tên DataSource phải trùng với tên đã định trong report (ví dụ: "DataSet1")
+        reportViewer.LocalReport.DataSources.Add(New ReportDataSource("DataSet1", dt))
+        reportViewer.ZoomMode = Microsoft.Reporting.WinForms.ZoomMode.Percent
+        reportViewer.ZoomPercent = 100
+        ' Tải lại báo cáo
+        reportViewer.RefreshReport()
+        ' Hiển thị form
+        frm.ShowDialog()
+    End Sub
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
     End Sub

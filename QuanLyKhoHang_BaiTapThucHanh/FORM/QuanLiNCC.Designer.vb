@@ -43,6 +43,8 @@ Partial Class QuanLiNCC
         Me.QuanLyKhoHangDataSet2 = New QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet2()
         Me.NhaCungCapTableAdapter = New QuanLyKhoHang_BaiTapThucHanh.QuanLyKhoHangDataSet2TableAdapters.NhaCungCapTableAdapter()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.btnThongKe = New System.Windows.Forms.Button()
+        Me.btnTimKiem = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.NhaCungCapBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -54,48 +56,55 @@ Partial Class QuanLiNCC
         '
         Me.Panel1.BackColor = System.Drawing.Color.CadetBlue
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel1.Controls.Add(Me.btnTimKiem)
+        Me.Panel1.Controls.Add(Me.btnThongKe)
         Me.Panel1.Controls.Add(Me.btn_LamMoi)
         Me.Panel1.Controls.Add(Me.btn_Sua)
         Me.Panel1.Controls.Add(Me.btn_Xoa)
         Me.Panel1.Controls.Add(Me.btn_Them)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Location = New System.Drawing.Point(1, -2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(265, 686)
+        Me.Panel1.Size = New System.Drawing.Size(232, 650)
         Me.Panel1.TabIndex = 0
         '
         'btn_LamMoi
         '
-        Me.btn_LamMoi.Location = New System.Drawing.Point(57, 509)
+        Me.btn_LamMoi.Location = New System.Drawing.Point(51, 407)
+        Me.btn_LamMoi.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btn_LamMoi.Name = "btn_LamMoi"
-        Me.btn_LamMoi.Size = New System.Drawing.Size(126, 45)
+        Me.btn_LamMoi.Size = New System.Drawing.Size(112, 36)
         Me.btn_LamMoi.TabIndex = 3
         Me.btn_LamMoi.Text = "Làm Mới"
         Me.btn_LamMoi.UseVisualStyleBackColor = True
         '
         'btn_Sua
         '
-        Me.btn_Sua.Location = New System.Drawing.Point(57, 397)
+        Me.btn_Sua.Location = New System.Drawing.Point(51, 318)
+        Me.btn_Sua.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btn_Sua.Name = "btn_Sua"
-        Me.btn_Sua.Size = New System.Drawing.Size(126, 45)
+        Me.btn_Sua.Size = New System.Drawing.Size(112, 36)
         Me.btn_Sua.TabIndex = 2
         Me.btn_Sua.Text = "Sửa"
         Me.btn_Sua.UseVisualStyleBackColor = True
         '
         'btn_Xoa
         '
-        Me.btn_Xoa.Location = New System.Drawing.Point(57, 296)
+        Me.btn_Xoa.Location = New System.Drawing.Point(51, 237)
+        Me.btn_Xoa.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btn_Xoa.Name = "btn_Xoa"
-        Me.btn_Xoa.Size = New System.Drawing.Size(126, 45)
+        Me.btn_Xoa.Size = New System.Drawing.Size(112, 36)
         Me.btn_Xoa.TabIndex = 2
         Me.btn_Xoa.Text = "Xoá"
         Me.btn_Xoa.UseVisualStyleBackColor = True
         '
         'btn_Them
         '
-        Me.btn_Them.Location = New System.Drawing.Point(57, 189)
+        Me.btn_Them.Location = New System.Drawing.Point(51, 151)
+        Me.btn_Them.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btn_Them.Name = "btn_Them"
-        Me.btn_Them.Size = New System.Drawing.Size(126, 42)
+        Me.btn_Them.Size = New System.Drawing.Size(112, 34)
         Me.btn_Them.TabIndex = 1
         Me.btn_Them.Text = "Thêm"
         Me.btn_Them.UseVisualStyleBackColor = True
@@ -104,9 +113,9 @@ Partial Class QuanLiNCC
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(49, 88)
+        Me.Label2.Location = New System.Drawing.Point(44, 61)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(142, 46)
+        Me.Label2.Size = New System.Drawing.Size(122, 39)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "MENU"
         '
@@ -121,72 +130,77 @@ Partial Class QuanLiNCC
         Me.Panel2.Controls.Add(Me.Label5)
         Me.Panel2.Controls.Add(Me.Label4)
         Me.Panel2.Controls.Add(Me.Label3)
-        Me.Panel2.Location = New System.Drawing.Point(282, 153)
+        Me.Panel2.Location = New System.Drawing.Point(251, 122)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(881, 186)
+        Me.Panel2.Size = New System.Drawing.Size(876, 149)
         Me.Panel2.TabIndex = 1
         '
         'txt_TenNCC
         '
-        Me.txt_TenNCC.Location = New System.Drawing.Point(552, 34)
+        Me.txt_TenNCC.Location = New System.Drawing.Point(585, 29)
+        Me.txt_TenNCC.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txt_TenNCC.Name = "txt_TenNCC"
-        Me.txt_TenNCC.Size = New System.Drawing.Size(186, 26)
+        Me.txt_TenNCC.Size = New System.Drawing.Size(166, 22)
         Me.txt_TenNCC.TabIndex = 4
         '
         'txt_SDT
         '
-        Me.txt_SDT.Location = New System.Drawing.Point(552, 108)
+        Me.txt_SDT.Location = New System.Drawing.Point(585, 88)
+        Me.txt_SDT.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txt_SDT.Name = "txt_SDT"
-        Me.txt_SDT.Size = New System.Drawing.Size(186, 26)
+        Me.txt_SDT.Size = New System.Drawing.Size(166, 22)
         Me.txt_SDT.TabIndex = 4
         '
         'txt_MaSoNCC
         '
-        Me.txt_MaSoNCC.Location = New System.Drawing.Point(187, 105)
+        Me.txt_MaSoNCC.Location = New System.Drawing.Point(260, 86)
+        Me.txt_MaSoNCC.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txt_MaSoNCC.Name = "txt_MaSoNCC"
-        Me.txt_MaSoNCC.Size = New System.Drawing.Size(145, 26)
+        Me.txt_MaSoNCC.Size = New System.Drawing.Size(129, 22)
         Me.txt_MaSoNCC.TabIndex = 4
         '
         'txt_MaNCC
         '
-        Me.txt_MaNCC.Location = New System.Drawing.Point(187, 34)
+        Me.txt_MaNCC.Location = New System.Drawing.Point(260, 29)
+        Me.txt_MaNCC.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txt_MaNCC.Name = "txt_MaNCC"
-        Me.txt_MaNCC.Size = New System.Drawing.Size(145, 26)
+        Me.txt_MaNCC.Size = New System.Drawing.Size(129, 22)
         Me.txt_MaNCC.TabIndex = 4
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(449, 111)
+        Me.Label6.Location = New System.Drawing.Point(493, 91)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(41, 20)
+        Me.Label6.Size = New System.Drawing.Size(35, 16)
         Me.Label6.TabIndex = 3
         Me.Label6.Text = "SDT"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(449, 40)
+        Me.Label5.Location = New System.Drawing.Point(493, 34)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(73, 20)
+        Me.Label5.Size = New System.Drawing.Size(62, 16)
         Me.Label5.TabIndex = 2
         Me.Label5.Text = "Tên NCC"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(56, 111)
+        Me.Label4.Location = New System.Drawing.Point(144, 91)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(92, 20)
+        Me.Label4.Size = New System.Drawing.Size(77, 16)
         Me.Label4.TabIndex = 1
         Me.Label4.Text = "Mã Số NCC"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(56, 40)
+        Me.Label3.Location = New System.Drawing.Point(144, 34)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(68, 20)
+        Me.Label3.Size = New System.Drawing.Size(57, 16)
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Mã NCC"
         '
@@ -194,9 +208,9 @@ Partial Class QuanLiNCC
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(449, 54)
+        Me.Label1.Location = New System.Drawing.Point(463, 34)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(518, 46)
+        Me.Label1.Size = New System.Drawing.Size(446, 39)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "QUẢN LÍ NHÀ CUNG CẤP"
         '
@@ -217,22 +231,44 @@ Partial Class QuanLiNCC
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(282, 345)
+        Me.DataGridView1.Location = New System.Drawing.Point(251, 276)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 62
         Me.DataGridView1.RowTemplate.Height = 28
-        Me.DataGridView1.Size = New System.Drawing.Size(881, 339)
+        Me.DataGridView1.Size = New System.Drawing.Size(876, 372)
         Me.DataGridView1.TabIndex = 3
+        '
+        'btnThongKe
+        '
+        Me.btnThongKe.Location = New System.Drawing.Point(51, 481)
+        Me.btnThongKe.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnThongKe.Name = "btnThongKe"
+        Me.btnThongKe.Size = New System.Drawing.Size(112, 36)
+        Me.btnThongKe.TabIndex = 4
+        Me.btnThongKe.Text = "Thống kê"
+        Me.btnThongKe.UseVisualStyleBackColor = True
+        '
+        'btnTimKiem
+        '
+        Me.btnTimKiem.Location = New System.Drawing.Point(51, 552)
+        Me.btnTimKiem.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnTimKiem.Name = "btnTimKiem"
+        Me.btnTimKiem.Size = New System.Drawing.Size(112, 36)
+        Me.btnTimKiem.TabIndex = 5
+        Me.btnTimKiem.Text = "Tìm kiếm"
+        Me.btnTimKiem.UseVisualStyleBackColor = True
         '
         'QuanLiNCC
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1175, 680)
+        Me.ClientSize = New System.Drawing.Size(1139, 659)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "QuanLiNCC"
         Me.Text = "QuanLiNCC"
         Me.Panel1.ResumeLayout(False)
@@ -267,4 +303,6 @@ Partial Class QuanLiNCC
     Friend WithEvents txt_MaNCC As TextBox
     Friend WithEvents btn_LamMoi As Button
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents btnThongKe As Button
+    Friend WithEvents btnTimKiem As Button
 End Class
